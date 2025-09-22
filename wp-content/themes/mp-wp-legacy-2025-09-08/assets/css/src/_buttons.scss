@@ -1,0 +1,78 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: $body-font;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    border: 0;
+    outline: none;
+
+  &--primary {
+    background: $primary-color;
+    color: $text-color;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &--secondary {
+    background: $secondary-color;
+    color: $darkblue_color;
+    border: 1px solid $secondary-color;
+
+    &:hover {
+      // opacity: 0.9;
+      background: transparent;
+      border: 1px solid $text-color;
+      color: $text-color;
+    }
+  }
+
+  &--icon {
+    background: $primary-color;
+    color: $text-color;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+
+.btn_design_1 {
+    display: flex;
+    &:hover {
+      .btn {
+        &--primary {
+            background: transparent;
+            border: 1px solid $primary-color;
+            color: $primary-color;
+        }
+        &--icon {
+            svg {
+              path {
+                stroke: $primary-color;
+              }
+            }
+        }
+      }
+    }
+    .btn {
+      border: 1px solid $primary-color;
+    }
+}
+
+

@@ -1,0 +1,8 @@
+.wp-block {
+    max-width: 100% !important;
+    overflow-wrap: normal;
+}
+
+.wp-block.block-list-appender {
+    margin: 60px;
+}

@@ -1,0 +1,106 @@
+.header {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  &.sticky {
+    position: fixed;
+    top: 40px;
+    left: 0;
+  }
+
+  .header__inner {
+    background: $text-color;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  .header__logo {
+    line-height: 0;
+    img { max-width: 142px; }
+  }
+
+  .nav__list {
+    list-style: none;
+    display: flex;
+    gap: 36px;
+
+    li {
+        position: relative;
+    }
+
+    li a {
+      font-family: $body-font;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px;
+      color: $primary-color;
+      transition: 0.3s;
+      
+      &:after {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 2px;
+          display: block;
+          margin-top: 5px;
+          right: 0;
+          background: $text-color;
+          transition: width .2s ease;
+      }
+
+      &:hover:after {
+        width: 100%;
+        left: 0;
+        background: $primary-color;
+      }
+
+
+  
+    }
+  }
+
+  &__main-flex-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* ---------------------------
+     Hamburger Toggle
+  --------------------------- */
+  .header__toggle {
+    display: none; /* hidden on desktop */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    span {
+      display: block;
+      height: 2px;
+      width: 100%;
+      background: $primary-color;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+    &.is-active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    &.is-active span:nth-child(2) {
+      opacity: 0;
+    }
+    &.is-active span:nth-child(3) {
+      transform: translateY(-10px) rotate(-45deg);
+    }
+  }
+}

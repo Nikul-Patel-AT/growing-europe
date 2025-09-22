@@ -1,0 +1,159 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
+.container {
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.font {
+  &--h1 {
+    color: $text-color;
+    text-align: center;
+    font-family: $body-font;
+    font-size: 74px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 90px;
+    letter-spacing: -3.5px;
+    padding-top: 16px;
+  }
+
+  &--h2-600 {
+    color: $darkblue_color;
+    text-align: center;
+    font-family: $body-font;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px;
+    letter-spacing: -1.68px;
+  }
+
+  &--h3-700 {
+    color: $text-color;
+    font-family: $body-font;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.96px;
+  }
+
+  &--40-600 {
+    color: $blue_secound_color;
+    font-family: $body-font;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px; /* 160% */
+    letter-spacing: -1.2px;
+  }
+
+  &--h4-500 {
+    color: $text-color;
+    font-family: $body-font;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px; /* 150% */
+    letter-spacing: -0.24px;
+    padding-top: 24px;
+  }
+
+  &--p-18 {
+    color: $darkblue_color;
+    font-family: $body-font;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 177.778% */
+    letter-spacing: -0.18px;
+  }
+
+  &--p-16 {
+    color: $darkblue_color;
+    font-family: $body-font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+  }
+}
+
+.margin-top-48{
+  margin-top: 48px;
+}
+
+.padding-tb-100{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.padding-top-108{
+  padding-top: 108px;
+}
+
+.padding-bottom-108{
+  padding-bottom: 108px;
+}
+
+.padding-bottom-56{
+  padding-bottom: 56px;
+}
+
+.padding-top-56{
+  padding-top: 56px;
+}
+
+.margin-zero, .padding-zero {
+  margin: 0;
+  padding: 0;
+}
+
+.primary-color{
+  color: $primary-color;
+}
+
+.blue_secound_color {
+  color: $blue_secound_color;
+}
+
+.darkblue_color {
+  color: $darkblue_color;
+}
+
+.white_color {
+  color: $text-color;
+}
+
+.light_background{
+  background-color: $lightblue_color;
+}
+
+.primary_background{
+  background-color: $primary-color;
+}
+
+.white_background{
+  background-color: $text-color;
+}
+
+.close_icon_color {
+  background-color : $close_icon_color;
+}
+
+.section{
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+  &__date, &__title {
+    color: $blue_secound_color;
+    padding: 0;
+  }
+}

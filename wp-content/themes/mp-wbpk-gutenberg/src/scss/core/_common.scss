@@ -1,0 +1,12 @@
+@import "_reset";
+@import "_breakpoint";
+@import "_variables";
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+
+  &.fixed {
+    overflow: hidden;
+  }
+}

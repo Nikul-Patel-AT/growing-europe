@@ -1,0 +1,46 @@
+.links-section {
+
+  &__title {
+    color: $blue_secound_color;
+  }
+
+  &__item {
+    padding: 23px 20px;
+    border-bottom: 2px solid rgba(66, 61, 108, 0.15);
+    border-radius: 0;
+  }
+
+  &__item:hover {
+    background: $primary-color;
+    transition: 0.2s linear;
+  }
+
+  &__item:hover a {   
+        color: $text-color;
+
+        span {
+           
+          background: $text-color;
+
+          svg path {
+            stroke: $primary-color;
+        }
+          
+        }
+        
+        
+  } 
+
+    &__item:last-child {
+        border: 0;
+    }
+
+  &__item a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 0 !important;
+  }
+
+}

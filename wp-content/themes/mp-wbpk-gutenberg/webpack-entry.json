@@ -1,0 +1,4 @@
+{
+  "404": "./src/js/404.js",
+  "page": "./src/js/page.js"
+}

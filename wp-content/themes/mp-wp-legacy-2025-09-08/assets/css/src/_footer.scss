@@ -1,0 +1,102 @@
+.footer {
+        border-radius: 88px 88px 0 0;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        position: relative;
+
+        &:after {
+            content: "";
+            left: 0;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: $lightblue_color;
+            top: 0;
+            z-index: -1;
+        }
+
+        &:before {
+            content: "";
+            right: 0;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: $lightblue_color;
+            top: 0;
+            z-index: -1;
+        }
+
+        &__flex_container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        &__section {
+            padding: 50px 60px;
+            border-radius: 36px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        &__heading, &__left {
+            width: 35%;
+        }
+
+        &__dec, &__right {
+            width: 49.1%;
+        }
+
+         &__dec strong {
+            color: $primary-color;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+            text-decoration-line: underline;
+        }
+
+
+        &__left {
+
+            .social-icons {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding-top: 16px;
+
+                a {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+        }
+
+        &__right {
+
+            .contact-email-box {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                padding-top: 16px;
+            }
+
+            h3 {
+                font-weight: 800;
+                line-height: 32px;
+            }
+
+            .email-label-box {
+                a {
+                    padding: 0;
+                    font-weight: 600;
+                }
+            }
+
+
+        }
+}
+

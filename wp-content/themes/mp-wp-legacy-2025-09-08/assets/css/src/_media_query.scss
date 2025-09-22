@@ -1,0 +1,870 @@
+// Start Max width 1366px Media Query
+@media only screen and (max-width: $media-desktop-view) {
+
+    .padding-tb-100 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .padding-bottom-108 {
+        padding-bottom: 88px;
+    }
+
+    .padding-top-108 {
+        padding-top: 88px;
+    }
+
+    .padding-bottom-56 {
+        padding-bottom: 46px;
+    }
+
+    .padding-top-56 {
+        padding-top: 46px;
+    }
+
+    .hero {
+        padding-top: 188px;
+        padding-bottom: 84px;
+        height: 730px;
+    }
+
+    .font {
+        &--h1 {
+            font-size: 66px;
+            line-height: 70px;
+            letter-spacing: -1.5px;
+            padding-top: 10px;
+        }
+
+        &--h2-600 {
+            font-size: 46px;
+            line-height: 54px;
+            letter-spacing: -1px;
+        }
+
+        &--h3-700 {
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        &--h4-500 {
+            font-size: 23px;
+            line-height: 31px; /* 150% */
+            letter-spacing: -0.24px;
+            padding-top: 20px;
+        }
+
+        &--40-600 {
+            font-size: 35px;
+            line-height: 42px;
+            letter-spacing: -1px;
+        }
+
+    }
+    
+}
+
+// End Max width 1366px Media Query
+
+
+
+
+
+// Start Max width 1280px Media Query
+@media only screen and (max-width: $media-laptop-view) {
+
+    .font {
+        &--h1 {
+            font-size: 60px;
+            line-height: 66px;
+            letter-spacing: 0;
+            padding-top: 10px;
+        }
+
+        &--h4-500 {
+            font-size: 22px;
+            line-height: 30px; /* 150% */
+            letter-spacing: 0;
+            padding-top: 15px;
+        }
+
+        &--h2-600 {
+            font-size: 42px;
+            line-height: 50px;
+            letter-spacing: 0;
+        }
+
+        &--h3-700 {
+            font-size: 25px;
+            line-height: 32px;
+        }
+
+        &--40-600 {
+            font-size: 32px;
+            line-height: 36px;
+            letter-spacing: 0 ;
+        }
+    }
+
+    .btn {
+        gap: 8px;
+        padding: 10px 21px;
+        font-size: 16px;
+        line-height: 24px;
+
+        &--icon {
+            width: 45px;
+            height: 45px;
+            padding: 5px;
+        }
+    }
+    
+    .margin-top-48 {
+        margin-top: 38px;
+    }
+    .padding-tb-100 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .padding-top-108 {
+        padding-top: 70px;
+    }
+    .padding-bottom-108 {
+        padding-bottom: 68px;
+    }
+    .padding-bottom-56 {
+        padding-bottom: 36px;
+    }
+    .padding-top-56 {
+        padding-top: 36px;
+    }
+    .footer {
+        padding-top: 70px;
+        padding-bottom: 70px;
+
+        &__flex_container {
+            gap: 30px;
+        }
+
+        &__section {
+            padding: 40px 50px;
+            border-radius: 36px;
+        }
+
+        &__dec strong {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    .guests {
+
+        border-radius: 88px;
+        margin: 0 20px;
+
+        &__grid {
+            row-gap: 20px;
+        }
+
+        
+    }
+
+
+    .guest-card {
+        width: calc(50% - 20px);
+        margin: 0 10px;
+
+        &__content {
+            padding: 20px;
+            
+        }
+
+        &__image {
+
+            line-height: 0;
+
+            img {
+            height: 100%;
+            object-fit: cover;
+            border-radius: 36px;
+            }
+        }
+    }
+
+    .section {
+        gap: 10px;
+    }
+
+    .program-item {
+        padding: 20px;
+        gap: 20px;
+        border-radius: 20px;
+
+        &--highlight {
+            border-radius: 20px;
+            padding: 30px 20px;
+        }
+
+        &__number{
+            width: 8.5%;
+        }
+    }
+
+}
+// End Max width 1280px Media Query
+
+
+
+
+
+// Start Max width 1024px Media Query
+@media only screen and (max-width: $media-tablet-view) {
+
+    .container {
+        padding: 0 30px;
+    }
+
+    .nav__list {
+        gap: 20px !important;
+    }
+
+    .padding-tb-100 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .padding-bottom-108 {
+        padding-bottom: 60px;
+    }
+
+    .padding-top-108 {
+        padding-top: 60px;
+    }
+
+    .padding-bottom-56 {
+        padding-bottom: 36px;
+    }
+
+    .padding-top-56 {
+        padding-top: 36px;
+    }
+
+    .hero {
+        padding-top: 150px;
+        padding-bottom: 70px;
+        height: 630px;
+        border-radius: 0 0 50px 50px;
+    }
+
+    .font {
+        &--h1 {
+            font-size: 45px;
+            line-height: 55px;
+            letter-spacing: 0;
+            padding-top: 10px;
+        }
+
+        &--h2-600 {
+            font-size: 40px;
+            line-height: 50px;
+            letter-spacing: 0;
+        }
+
+        &--h3-700 {
+            font-size: 23px;
+            line-height: 30px;
+            letter-spacing: 0;
+        }
+
+        &--h4-500 {
+            font-size: 20px;
+            line-height: 25px;
+            letter-spacing: 0;
+            padding-top: 10px;
+        }
+
+        &--40-600 {
+            font-size: 28px;
+            line-height: 35px;
+            letter-spacing: 0;
+        }
+
+    }
+
+
+    .btn {
+        gap: 8px;
+        padding: 8px 15px;
+        font-size: 16px;
+        line-height: 24px;
+
+        &--icon {
+            width: 40px;
+            height: 40px;
+            padding: 5px;
+
+            svg {
+                width: 24px;
+            }
+        }
+    }
+
+    .guests {
+        border-radius: 50px;
+    }
+
+    .links-section {
+
+        &__item {
+            padding: 15px 15px;
+        }
+    }
+
+    .logo-section {
+
+        &__with-background{
+            padding-bottom: 30px;
+            border-radius: 50px 50px 0 0;
+        }
+    }
+
+    .footer {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        border-radius: 50px 50px 0 0;
+
+        &__flex_container {
+            gap: 30px;
+        }
+
+        &__section {
+            padding: 30px;
+            border-radius: 26px;
+        }
+
+        &__dec strong {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        
+    }
+
+    .popup {
+
+        .popup-inner {
+            max-width: 770px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            max-height: 85vh;
+            border-radius: 30px;
+        }
+
+        .popup-content {
+            padding: 30px;
+
+            h2 {
+                font-size: 30px;
+                line-height: 40px; /* 120% */
+                letter-spacing: 0;
+                margin-bottom: 20px;
+            }
+
+            h3 {
+                font-size: 20px;
+                line-height: 24px; /* 100% */
+                letter-spacing: 0;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+
+    .guest-popup-content  {
+        padding: 40px 30px;
+        padding-bottom: 30px;
+
+        h2 {
+        color: $blue_secound_color;
+        font-family: $body-font;
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: 0;
+        }
+
+        h3 {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0;
+        margin-bottom: 10px;
+        }
+    }
+
+}
+// End Max width 1024px Media Query
+
+
+// Start Max width 991px Media Query
+@media only screen and (max-width: $media-tablet-view-small) {
+    .header {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+
+        &.sticky {
+            top: 20px;
+        }
+
+
+        .header__inner {
+            background: #fff;
+            border-radius: 30PX;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 16px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header__logo {
+            line-height: 0;
+
+            img { 
+                max-width: 100px; 
+            }
+        }
+
+        .header__toggle { display: flex; }
+
+        .header__nav {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            width: calc(100% - 40px);
+            left: 20px;
+            right: 20px;
+            background: #fff;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.3s ease;
+        }
+
+        .open .header__nav {
+            max-height: 400px; /* adjust if you have many links */
+            transition: max-height 0.3s ease;
+            width: calc(100% - 60px);
+            left: 30px;
+            right: 30px;
+            border-radius: 0 0 30px 30px;
+        }
+
+        .header__inner.open {
+            border-radius: 30px 30px 0 0 !important;
+        }
+
+        .nav__list {
+            flex-direction: column;
+            gap: 0;
+            padding: 16px;
+            li a {
+                display: block;
+                padding: 5px 0;
+            }
+        }
+    }
+
+    .guests__grid {
+        align-items: flex-start;
+        .guest-card {
+            flex-direction: column;
+            .guest-50-flex {
+                width: 100%;
+            }
+        }
+
+    }
+}
+// End Max width 991px Media Query
+
+
+// Start Max width 767px Media Query
+@media only screen and (max-width: $media-mobile-view) {
+
+    .header {
+        .open .header__nav {
+            width: calc(100% - 40px);
+            left: 20px;
+            right: 20px;
+        }
+    }
+    .container {
+        padding: 0 20px;
+    }
+
+    .nav__list {
+        gap: 20px !important;
+    }
+
+    .padding-tb-100 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .padding-bottom-108 {
+        padding-bottom: 40px;
+    }
+
+    .padding-top-108 {
+        padding-top: 40px;
+    }
+
+    .padding-bottom-56 {
+        padding-bottom: 16px;
+    }
+
+    .padding-top-56 {
+        padding-top: 16px;
+    }
+
+    .hero {
+        padding-top: 150px;
+        padding-bottom: 70px;
+        height: 600px;
+        border-radius: 0 0 50px 50px;
+    }
+
+    .font {
+        &--h1 {
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: 0;
+            padding-top: 10px;
+        }
+
+        &--h2-600 {
+            font-size: 26px;
+            line-height: 33px;
+            letter-spacing: 0;
+        }
+
+        &--h3-700 {
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0;
+        }
+
+        &--h4-500 {
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 0;
+            padding-top: 10px;
+        }
+
+        &--40-600 {
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: 0;
+        }
+
+        &--p-18 {
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0;
+        }
+
+    }
+
+
+    .btn {
+        gap: 8px;
+        padding: 7px 13px;
+        font-size: 14px;
+        line-height: 20px;
+
+        &--icon {
+            width: 35px;
+            height: 35px;
+
+            svg {
+                width: 24px;
+            }
+        }
+    }
+
+
+    .event-section {
+        .event-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            gap: 20px;
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+
+        .event-card {
+            width: 100%;
+            text-align: center;
+        }
+
+    }
+
+    .guests {
+        &__footer {
+            .btn--icon {
+                padding: 8px;
+            }
+        }
+    }
+
+    .contact-email-box {
+        .btn--icon {
+            padding: 8px;
+        }
+    }
+
+    .program-item {
+        padding: 20px;
+        gap: 20px;
+        border-radius: 20px;
+        flex-direction: column;
+
+        &__number{
+            width: 100%;
+        }
+
+        &__time {
+            width: 100%;
+        }
+
+        &__heading {
+           width: 100%;
+        }
+
+        &__content {
+            width: 100%;
+        }
+
+        &--highlight {
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        &__content-hightlighted {
+            width: 100%;
+        }
+
+    }
+
+    .logo-section {
+
+        &__without-background{
+
+        .logo-item {
+
+            &__image {
+                width: 100% !important;
+                height: unset !important;
+                padding: 10px !important;
+            }
+
+            &__image.small img {
+                width: 100%;
+                height: 100%;
+                max-width: 120px;
+                display: block;
+                margin: 0 auto;
+            }
+
+            &__image.large img {
+                width: 100%;
+                height: 100%;
+                max-width: 434px;
+                display: block;
+                margin: 0 auto;
+            }
+
+        }
+
+    }
+
+        &__with-background{
+            padding-bottom: 30px;
+            border-radius: 50px 50px 0 0;
+
+            .logo-item {
+
+            &__logos {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 20px;
+                padding-bottom: 40px;
+            }
+
+            &__image {
+                width: calc(33% - 10px);
+                height: 100px;
+                padding: 20px;
+            }
+        }
+        }
+
+        
+    }
+
+    .guest-card {
+        width: 100%;
+        margin: 0 10px;
+
+        &__content {
+            padding: 20px;
+        }
+
+        &__image {
+
+            line-height: 0;
+
+            img {
+            height: 100%;
+            object-fit: cover;
+            border-radius: 36px;
+            }
+        }
+    }
+
+    .footer {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-radius: 50px 50px 0 0;
+
+        &__flex_container {
+            gap: 20px;
+        }
+
+        &__section {
+            padding: 20px;
+            border-radius: 26px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__dec strong {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        &__heading, &__left {
+            width: 100%;
+        }
+
+        &__dec, &__right {
+            width: 100%;
+        }
+    }
+
+    .popup {
+
+        .popup-inner {
+            border-radius: 20px;
+            .popup-close {
+                padding: 6px;
+            }
+        }
+
+        .popup-content {
+            padding: 20px;
+
+            h2 {
+                font-size: 25px;
+                line-height: 35px; /* 120% */
+                letter-spacing: 0;
+                margin-bottom: 10px;
+            }
+
+            h3 {
+                font-size: 18px;
+                line-height: 24px; /* 100% */
+                letter-spacing: 0;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .guest-popup {
+        .guest-popup-content {
+            padding: 20px;
+            max-height: 85vh;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            top: 0;
+            .guest-popup-close {
+                padding: 6px;
+                svg {
+                    path {
+                        stroke-width: 2px;
+                    }
+                }
+            }
+
+            h2 {
+            font-size: 25px;
+            line-height: 35px;
+            margin-bottom: 10px;
+        
+            }
+
+            h3 {
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 0;
+            }
+        }
+    }
+
+    .guests {
+        margin: 0;
+    }
+}
+// End Max width 767px Media Query
+
+
+// Start Max width 540px Media Query
+@media only screen and (max-width: $media-mobile-view-small) {
+
+    .logo-item {
+
+            &__logos {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            &__image {
+                width: calc(50% - 10px) !important;
+                height: 140px !important;
+                padding: 15px !important;
+            }
+        }
+
+    .guest-popup-content {
+
+        h3 {
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 0;
+            max-width: 240px;
+        }
+    }
+
+}
+// End Max width 540px Media Query
