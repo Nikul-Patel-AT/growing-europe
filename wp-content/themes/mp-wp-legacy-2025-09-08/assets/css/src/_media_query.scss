@@ -73,6 +73,15 @@
 // Start Max width 1280px Media Query
 @media only screen and (max-width: $media-laptop-view) {
 
+    .header{
+        .nav__list {
+            gap: 20px !important;
+            li a {
+                font-size: 14px;
+            }
+        }
+    }
+
     .font {
         &--h1 {
             font-size: 60px;
@@ -222,10 +231,6 @@
 
     .container {
         padding: 0 30px;
-    }
-
-    .nav__list {
-        gap: 20px !important;
     }
 
     .padding-tb-100 {
@@ -405,7 +410,7 @@
 
 
 // Start Max width 991px Media Query
-@media only screen and (max-width: $media-tablet-view-small) {
+@media only screen and (max-width: $media-tablet-view-small) {  
     .header {
         position: absolute;
         top: 20px;
@@ -416,7 +421,6 @@
         &.sticky {
             top: 20px;
         }
-
 
         .header__inner {
             background: #fff;
@@ -431,8 +435,8 @@
         .header__logo {
             line-height: 0;
 
-            img { 
-                max-width: 100px; 
+            img {
+                max-width: 100px;
             }
         }
 
@@ -443,9 +447,9 @@
             top: 100%;
             left: 0;
             width: 100%;
-            width: calc(100% - 40px);
-            left: 20px;
-            right: 20px;
+            width: calc(100% - 60px);
+            left: 30px;
+            right: 30px;
             background: #fff;
             border-radius: 0 0 20px 20px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -472,6 +476,7 @@
             gap: 0;
             padding: 16px;
             li a {
+                font-size: 16px;
                 display: block;
                 padding: 5px 0;
             }
@@ -497,6 +502,11 @@
 
     .header {
         .open .header__nav {
+            width: calc(100% - 40px);
+            left: 20px;
+            right: 20px;
+        }
+        .header__nav {
             width: calc(100% - 40px);
             left: 20px;
             right: 20px;

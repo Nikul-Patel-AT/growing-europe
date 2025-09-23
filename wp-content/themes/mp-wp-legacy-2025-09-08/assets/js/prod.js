@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
     }
     function closePopup(popup) {
         popup.fadeOut(function() {
-            $('body').removeClass('popup-open'); 
+            $('body').removeClass('popup-open');
         });
     }
     $('.open-popup').on('click', function(e) {

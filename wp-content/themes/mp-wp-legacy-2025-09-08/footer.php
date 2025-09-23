@@ -91,9 +91,11 @@ $section_id                  = get_field('section_id', 'option');
 
 
 <!-- About Summit Pop Up Section -->
-<?php 
+<?php
 $summit_image   = get_field('summit_image', 'option');
 $summit_content = get_field('summit_content', 'option');
+$banner_image  = get_field('travel_accommodation_banner_image', 'option');
+$travel_accommodation_content = get_field('travel_accommodation_content', 'option');
 ?>
 
 <div id="about-summit-popup" class="popup" style="display:none;">
@@ -105,6 +107,28 @@ $summit_content = get_field('summit_content', 'option');
 
         <?php if($summit_content): ?>
             <div class="popup-content"><?php echo apply_filters('the_content', $summit_content); ?></div>
+        <?php endif; ?>
+
+        <button class="popup-close btn btn--primary btn--icon close_icon_color">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M8.25729 7.75736L16.7426 16.2426M16.7426 7.75736L8.25729 16.2426" stroke="#492447" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel"/>
+          </svg>
+        </button>
+    </div>
+        </div>
+</div>
+
+
+<!-- Travel & Accommodation Pop Up Section -->
+<div id="travel-accommodation-popup" class="popup" style="display:none;">
+  <div class="popup__main-container">
+    <div class="popup-inner">
+        <?php if($banner_image): ?>
+            <img src="<?php echo esc_url($banner_image['url']); ?>" alt="<?php echo esc_attr($banner_image['alt']); ?>" class="popup-image">
+        <?php endif; ?>
+
+        <?php if($travel_accommodation_content): ?>
+            <div class="popup-content"><?php echo apply_filters('the_content', $travel_accommodation_content); ?></div>
         <?php endif; ?>
 
         <button class="popup-close btn btn--primary btn--icon close_icon_color">

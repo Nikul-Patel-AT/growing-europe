@@ -21,7 +21,7 @@
 
     <?php
 // Get ACF fields (Theme Header - Options Page)
-$logo      = get_field('logo', 'option'); 
+$logo      = get_field('logo', 'option');
 $header_menu = get_field('header_menu', 'option');
 $btn_label = get_field('button_label', 'option');
 $btn_url   = get_field('button_url', 'option');
@@ -61,7 +61,7 @@ $btn_url   = get_field('button_url', 'option');
             <!-- CTA Button -->
             <?php if ($btn_label && $btn_url): ?>
                 <div class="header__cta">
-                <a href="<?php echo esc_url($btn_url); ?>" class="btn_design_1">
+                <a href="<?php echo esc_url($btn_url); ?>" class="btn_design_1" target="_blank">
                     <span class="btn btn--primary"><?php echo esc_html($btn_label); ?></span>
                     <span class="btn btn--primary btn--icon">
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">

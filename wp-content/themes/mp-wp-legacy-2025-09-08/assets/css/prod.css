@@ -354,10 +354,10 @@ html {
   color: #fff;
   text-align: center;
   font-family: "DM Sans", sans-serif;
-  font-size: 74px;
+  font-size: 68px;
   font-style: normal;
   font-weight: 900;
-  line-height: 90px;
+  line-height: 72px;
   letter-spacing: -3.5px;
   padding-top: 16px;
 }
@@ -569,7 +569,7 @@ html {
 .event-section .event-card .event-image img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 48px;
   display: block;
 }
 .event-section .event-card .event-name {
@@ -616,6 +616,7 @@ body.popup-open {
 }
 .guest-card__image img {
   width: 100%;
+  border-radius: 36px;
 }
 .guest-card__content {
   padding: 32px;
@@ -1097,6 +1098,12 @@ body.popup-open {
   }
 }
 @media only screen and (max-width: 1280px) {
+  .header .nav__list {
+    gap: 20px !important;
+  }
+  .header .nav__list li a {
+    font-size: 14px;
+  }
   .font--h1 {
     font-size: 60px;
     line-height: 66px;
@@ -1209,9 +1216,6 @@ body.popup-open {
 @media only screen and (max-width: 1024px) {
   .container {
     padding: 0 30px;
-  }
-  .nav__list {
-    gap: 20px !important;
   }
   .padding-tb-100 {
     padding-top: 60px;
@@ -1376,9 +1380,9 @@ body.popup-open {
     top: 100%;
     left: 0;
     width: 100%;
-    width: calc(100% - 40px);
-    left: 20px;
-    right: 20px;
+    width: calc(100% - 60px);
+    left: 30px;
+    right: 30px;
     background: #fff;
     border-radius: 0 0 20px 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -1403,6 +1407,7 @@ body.popup-open {
     padding: 16px;
   }
   .header .nav__list li a {
+    font-size: 16px;
     display: block;
     padding: 5px 0;
   }
@@ -1418,6 +1423,11 @@ body.popup-open {
 }
 @media only screen and (max-width: 767px) {
   .header .open .header__nav {
+    width: calc(100% - 40px);
+    left: 20px;
+    right: 20px;
+  }
+  .header .header__nav {
     width: calc(100% - 40px);
     left: 20px;
     right: 20px;
