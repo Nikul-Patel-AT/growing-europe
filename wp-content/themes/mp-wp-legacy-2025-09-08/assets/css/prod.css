@@ -1071,8 +1071,8 @@ body.popup-open {
     height: 730px;
   }
   .font--h1 {
-    font-size: 66px;
-    line-height: 70px;
+    font-size: 60px;
+    line-height: 66px;
     padding-top: 10px;
   }
   .font--h2-600 {
@@ -1102,12 +1102,6 @@ body.popup-open {
   }
   .header .nav__list li a {
     font-size: 14px;
-  }
-  .font--h1 {
-    font-size: 60px;
-    line-height: 66px;
-    letter-spacing: 0;
-    padding-top: 10px;
   }
   .font--h4-500 {
     font-size: 22px;
