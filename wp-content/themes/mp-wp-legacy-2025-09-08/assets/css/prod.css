@@ -358,7 +358,6 @@ html {
   font-style: normal;
   font-weight: 900;
   line-height: 72px;
-  letter-spacing: -3.5px;
   padding-top: 16px;
 }
 .font--h2-600 {
@@ -617,6 +616,7 @@ body.popup-open {
 .guest-card__image img {
   width: 100%;
   border-radius: 36px;
+  border: 5px solid #FFF;
 }
 .guest-card__content {
   padding: 32px;
@@ -1071,9 +1071,8 @@ body.popup-open {
     height: 730px;
   }
   .font--h1 {
-    font-size: 66px;
-    line-height: 70px;
-    letter-spacing: -1.5px;
+    font-size: 60px;
+    line-height: 66px;
     padding-top: 10px;
   }
   .font--h2-600 {
@@ -1103,12 +1102,6 @@ body.popup-open {
   }
   .header .nav__list li a {
     font-size: 14px;
-  }
-  .font--h1 {
-    font-size: 60px;
-    line-height: 66px;
-    letter-spacing: 0;
-    padding-top: 10px;
   }
   .font--h4-500 {
     font-size: 22px;
@@ -1242,8 +1235,6 @@ body.popup-open {
   .font--h1 {
     font-size: 45px;
     line-height: 55px;
-    letter-spacing: 0;
-    padding-top: 10px;
   }
   .font--h2-600 {
     font-size: 40px;
@@ -1463,8 +1454,6 @@ body.popup-open {
   .font--h1 {
     font-size: 32px;
     line-height: 40px;
-    letter-spacing: 0;
-    padding-top: 10px;
   }
   .font--h2-600 {
     font-size: 26px;
