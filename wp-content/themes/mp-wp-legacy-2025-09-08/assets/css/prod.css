@@ -1235,8 +1235,6 @@ body.popup-open {
   .font--h1 {
     font-size: 45px;
     line-height: 55px;
-    letter-spacing: 0;
-    padding-top: 10px;
   }
   .font--h2-600 {
     font-size: 40px;
@@ -1456,8 +1454,6 @@ body.popup-open {
   .font--h1 {
     font-size: 32px;
     line-height: 40px;
-    letter-spacing: 0;
-    padding-top: 10px;
   }
   .font--h2-600 {
     font-size: 26px;
