@@ -358,7 +358,6 @@ html {
   font-style: normal;
   font-weight: 900;
   line-height: 72px;
-  letter-spacing: -3.5px;
   padding-top: 16px;
 }
 .font--h2-600 {
@@ -617,6 +616,7 @@ body.popup-open {
 .guest-card__image img {
   width: 100%;
   border-radius: 36px;
+  border: 5px solid #FFF;
 }
 .guest-card__content {
   padding: 32px;
@@ -1073,7 +1073,6 @@ body.popup-open {
   .font--h1 {
     font-size: 66px;
     line-height: 70px;
-    letter-spacing: -1.5px;
     padding-top: 10px;
   }
   .font--h2-600 {
