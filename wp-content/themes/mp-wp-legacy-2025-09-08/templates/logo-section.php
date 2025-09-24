@@ -49,9 +49,10 @@
                             $logos   = get_sub_field( 'logos' ); // Gallery array
                             $logos_per_row = get_sub_field( 'logos_per_row' ); // 3 or 4
                             $custom_font_size = get_sub_field( 'custom_font_size');
+                            $heading_font_text_size = get_sub_field( 'heading_font_text_size');
                             ?>
                             <?php if ( $heading ) : ?>
-                                <h2 class="logo-item__heading font--h2-600 blue_secound_color" style="font-size: <?php echo $custom_font_size; ?>px; line-height: 100%;"><?php echo esc_html( $heading ); ?></h2>
+                                <h2 class="logo-item__heading font--h2-600 blue_secound_color <?php echo esc_attr($heading_font_text_size); ?>" style="font-size: <?php echo $custom_font_size; ?>px; line-height: 100%;"><?php echo esc_html( $heading ); ?></h2>
                             <?php endif; ?>
 
                             <?php if ( ! empty( $logos ) && is_array( $logos ) ) : ?>

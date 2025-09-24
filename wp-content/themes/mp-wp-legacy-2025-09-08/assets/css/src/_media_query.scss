@@ -63,11 +63,7 @@
     }
     
 }
-
 // End Max width 1366px Media Query
-
-
-
 
 
 // Start Max width 1280px Media Query
@@ -215,15 +211,16 @@
         }
 
         &__number{
-            width: 8.5%;
+            width: 8%;
+        }
+
+        &__time {
+            width: 20%;
         }
     }
 
 }
 // End Max width 1280px Media Query
-
-
-
 
 
 // Start Max width 1024px Media Query
@@ -410,7 +407,7 @@
 
 
 // Start Max width 991px Media Query
-@media only screen and (max-width: $media-tablet-view-small) {  
+@media only screen and (max-width: $media-tablet-view-small) {
     .header {
         position: absolute;
         top: 20px;
@@ -493,6 +490,39 @@
         }
 
     }
+
+     .program-item {
+        padding: 20px;
+        gap: 20px;
+        border-radius: 20px;
+        flex-direction: column;
+
+        &__number{
+            width: 100%;
+        }
+
+        &__time {
+            width: 100%;
+        }
+
+        &__heading {
+            width: 100%;
+        }
+
+        &__content {
+            width: 100%;
+        }
+
+        &--highlight {
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        &__content-hightlighted {
+            width: 100%;
+        }
+
+    }
 }
 // End Max width 991px Media Query
 
@@ -501,7 +531,10 @@
 @media only screen and (max-width: $media-mobile-view) {
     .logo-item.logo-item--highlighted:nth-child(3), .logo-item.logo-item--highlighted:nth-child(4) {
         width: 100% !important;
+        max-width: 100% !important;
+        margin: 0px !important;
     }
+
     .header {
         .open .header__nav {
             width: calc(100% - 40px);
@@ -638,39 +671,6 @@
         .btn--icon {
             padding: 8px;
         }
-    }
-
-    .program-item {
-        padding: 20px;
-        gap: 20px;
-        border-radius: 20px;
-        flex-direction: column;
-
-        &__number{
-            width: 100%;
-        }
-
-        &__time {
-            width: 100%;
-        }
-
-        &__heading {
-           width: 100%;
-        }
-
-        &__content {
-            width: 100%;
-        }
-
-        &--highlight {
-            border-radius: 20px;
-            padding: 20px;
-        }
-
-        &__content-hightlighted {
-            width: 100%;
-        }
-
     }
 
     .logo-section {
