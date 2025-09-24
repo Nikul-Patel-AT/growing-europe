@@ -8,7 +8,7 @@ $sub_title = get_sub_field('guest_sub_text');
         <h2 class="guests__title font--h2-600"><?php echo esc_html( $heading ); ?></h2>
         <?php if ( $sub_title ) : ?>
                 <div class="guests-subtitle font--p-18 padding-bottom-56">
-                    <?php echo wp_kses_post( $sub_title ); ?>
+                    <p><?php echo esc_html($sub_title); ?></p>
                 </div>
         <?php endif; ?>
 
@@ -24,6 +24,7 @@ $sub_title = get_sub_field('guest_sub_text');
                     $guest_image = get_sub_field('guest_image');
                     $guest_name  = get_sub_field('guest_name');
                     $guest_role  = get_sub_field('guest_role__description');
+                    $guest_link_text  = get_sub_field('guest_link_text');
                     $option      = get_sub_field('guest_option');
                     $link        = get_sub_field('guest_link');
                     $popup_content = get_sub_field('guest_popup_content');
@@ -63,17 +64,15 @@ $sub_title = get_sub_field('guest_sub_text');
                             <?php endif; ?>
                         </div>
                         <?php if( $option == 'link' && $link ): ?>
-                            <a href="<?php echo esc_url($link); ?>" target="_blank" class="guest-link guest-card__link font--p-16">Learn More</a>
+                            <a href="<?php echo esc_url($link); ?>" target="_blank" class="guest-link guest-card__link font--p-16"><?php echo esc_html($guest_link_text); ?></a>
                         <?php elseif( $option == 'popup' && $popup_content ): ?>
 
-                            <button class="guest-popup-btn guest-card__link font--p-16" data-popup-key="<?php echo esc_attr($guest_id); ?>">Learn more</button>
+                            <button class="guest-popup-btn guest-card__link font--p-16" data-popup-key="<?php echo esc_attr($guest_id); ?>"><?php echo esc_html($guest_link_text); ?></button>
 
                             <!-- hidden content -->
                             <div class="guest-popup-data" id="guest_content_<?php echo esc_attr($guest_id); ?>" style="display:none;">
                             <?php echo wp_kses_post($popup_content); ?>
                             </div>
-
-                        
                         <?php endif; ?>
                     </div>
                 </div>

@@ -488,6 +488,10 @@ html {
   color: #423D6C;
   padding: 0;
 }
+.section .section-subtitle {
+  color: #423D6C;
+  text-align: center;
+}
 
 .btn {
   display: inline-flex;
@@ -582,6 +586,10 @@ body.popup-open {
 .guests {
   border-radius: 88px;
   margin: 0 20px;
+}
+.guests .guests-subtitle {
+  margin-top: 15px;
+  text-align: center;
 }
 .guests__grid {
   display: flex;
@@ -779,27 +787,27 @@ body.popup-open {
   align-items: flex-start;
 }
 .program-item__number {
-  width: 6.5%;
+  width: 6%;
   padding: 0 !important;
 }
 .program-item__time {
-  width: 18.71%;
+  width: 16%;
   padding: 0 !important;
   font-weight: 600;
 }
 .program-item__heading {
-  width: 31.13%;
+  width: 28%;
   padding: 0 !important;
   font-weight: 900;
 }
 .program-item__content {
-  width: 53%;
+  width: 50%;
 }
 .program-item__content strong {
   font-weight: bold !important;
 }
 .program-item__content-hightlighted {
-  width: 91.4%;
+  width: 94%;
 }
 .program-item--highlight {
   background: #A3197C;
@@ -911,34 +919,46 @@ body.popup-open {
   width: 50%;
 }
 .logo-section__with-background .logo-item.logo-item--highlighted:nth-child(3) {
-  padding-left: 15%;
+  max-width: 255px;
+  margin-left: auto;
 }
 .logo-section__with-background .logo-item.logo-item--highlighted:nth-child(4) {
-  padding-right: 15%;
+  max-width: 255px;
+  margin-right: auto;
 }
 @media only screen and (max-width: 1366px) {
-  .logo-section__with-background .logo-item__heading.font--h2-600 {
+  .logo-section__with-background .logo-item__heading.larger-font {
     font-size: 46px !important;
     line-height: 54px !important;
     letter-spacing: -1.1px !important;
     padding-top: 10px !important;
   }
+  .logo-section__with-background .logo-item__heading.smaller-font {
+    font-size: 22px !important;
+    line-height: 100% !important;
+  }
 }
 @media only screen and (max-width: 1280px) {
-  .logo-section__with-background .logo-item__heading.font--h2-600 {
+  .logo-section__with-background .logo-item__heading.larger-font {
     font-size: 42px !important;
     line-height: 50px !important;
     letter-spacing: 0 !important;
   }
+  .logo-section__with-background .logo-item__heading.smaller-font {
+    font-size: 20px !important;
+  }
 }
 @media only screen and (max-width: 1024px) {
-  .logo-section__with-background .logo-item__heading.font--h2-600 {
+  .logo-section__with-background .logo-item__heading.larger-font {
     font-size: 40px !important;
     line-height: 50px !important;
   }
+  .logo-section__with-background .logo-item__heading.smaller-font {
+    font-size: 18px !important;
+  }
 }
-@media only screen and (max-width: 768px) {
-  .logo-section__with-background .logo-item__heading.font--h2-600 {
+@media only screen and (max-width: 767px) {
+  .logo-section__with-background .logo-item__heading.larger-font {
     font-size: 26px !important;
     line-height: 33px !important;
     letter-spacing: 0 !important;
@@ -1227,7 +1247,10 @@ body.popup-open {
     padding: 30px 20px;
   }
   .program-item__number {
-    width: 8.5%;
+    width: 8%;
+  }
+  .program-item__time {
+    width: 20%;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -1437,10 +1460,37 @@ body.popup-open {
   .guests__grid .guest-card .guest-50-flex {
     width: 100%;
   }
+  .program-item {
+    padding: 20px;
+    gap: 20px;
+    border-radius: 20px;
+    flex-direction: column;
+  }
+  .program-item__number {
+    width: 100%;
+  }
+  .program-item__time {
+    width: 100%;
+  }
+  .program-item__heading {
+    width: 100%;
+  }
+  .program-item__content {
+    width: 100%;
+  }
+  .program-item--highlight {
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .program-item__content-hightlighted {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 767px) {
   .logo-item.logo-item--highlighted:nth-child(3), .logo-item.logo-item--highlighted:nth-child(4) {
     width: 100% !important;
+    max-width: 100% !important;
+    margin: 0px !important;
   }
   .header .open .header__nav {
     width: calc(100% - 40px);
@@ -1542,31 +1592,6 @@ body.popup-open {
   }
   .contact-email-box .btn--icon {
     padding: 8px;
-  }
-  .program-item {
-    padding: 20px;
-    gap: 20px;
-    border-radius: 20px;
-    flex-direction: column;
-  }
-  .program-item__number {
-    width: 100%;
-  }
-  .program-item__time {
-    width: 100%;
-  }
-  .program-item__heading {
-    width: 100%;
-  }
-  .program-item__content {
-    width: 100%;
-  }
-  .program-item--highlight {
-    border-radius: 20px;
-    padding: 20px;
-  }
-  .program-item__content-hightlighted {
-    width: 100%;
   }
   .logo-section__without-background .logo-item__image {
     width: 100% !important;

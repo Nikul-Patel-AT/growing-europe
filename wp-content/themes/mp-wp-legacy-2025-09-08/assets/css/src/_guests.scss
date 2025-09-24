@@ -5,6 +5,11 @@ body.popup-open {
   border-radius: 88px;
   margin: 0 20px;
 
+  .guests-subtitle {
+    margin-top: 15px;
+    text-align: center;
+  }
+
 
   &__grid {
     display: flex;
