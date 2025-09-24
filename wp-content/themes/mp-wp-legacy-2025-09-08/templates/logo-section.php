@@ -40,7 +40,7 @@
     <?php elseif ( $logo_section_type === 'with_background_logo_section' ) : ?>
 
         <div class="logo-section__with-background padding-top-108 light_background">
-            <div class="container">
+            <div class="container main-flex-logo-sec">
                 <?php if ( have_rows( 'with_background_logo_section' ) ) :
                     while ( have_rows( 'with_background_logo_section' ) ) : the_row(); ?>
                         <div class="logo-item logo-item--highlighted">

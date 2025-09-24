@@ -791,10 +791,9 @@ body.popup-open {
   width: 31.13%;
   padding: 0 !important;
   font-weight: 900;
-  text-transform: uppercase;
 }
 .program-item__content {
-  width: 37.5%;
+  width: 53%;
 }
 .program-item__content strong {
   font-weight: bold !important;
@@ -898,6 +897,24 @@ body.popup-open {
 .logo-section__with-background {
   padding-bottom: 52px;
   border-radius: 88px 88px 0 0;
+}
+.logo-section__with-background .main-flex-logo-sec {
+  display: flex;
+  flex-wrap: wrap;
+}
+.logo-section__with-background .logo-item.logo-item--highlighted:first-child,
+.logo-section__with-background .logo-item.logo-item--highlighted:nth-child(2) {
+  width: 100%;
+}
+.logo-section__with-background .logo-item.logo-item--highlighted:nth-child(3),
+.logo-section__with-background .logo-item.logo-item--highlighted:nth-child(4) {
+  width: 50%;
+}
+.logo-section__with-background .logo-item.logo-item--highlighted:nth-child(3) {
+  padding-left: 15%;
+}
+.logo-section__with-background .logo-item.logo-item--highlighted:nth-child(4) {
+  padding-right: 15%;
 }
 @media only screen and (max-width: 1366px) {
   .logo-section__with-background .logo-item__heading.font--h2-600 {
@@ -1071,8 +1088,9 @@ body.popup-open {
     height: 730px;
   }
   .font--h1 {
-    font-size: 60px;
-    line-height: 66px;
+    font-size: 66px;
+    line-height: 70px;
+    letter-spacing: -1.5px;
     padding-top: 10px;
   }
   .font--h2-600 {
@@ -1102,6 +1120,12 @@ body.popup-open {
   }
   .header .nav__list li a {
     font-size: 14px;
+  }
+  .font--h1 {
+    font-size: 60px;
+    line-height: 66px;
+    letter-spacing: 0;
+    padding-top: 10px;
   }
   .font--h4-500 {
     font-size: 22px;
@@ -1235,6 +1259,8 @@ body.popup-open {
   .font--h1 {
     font-size: 45px;
     line-height: 55px;
+    letter-spacing: 0;
+    padding-top: 10px;
   }
   .font--h2-600 {
     font-size: 40px;
@@ -1413,6 +1439,9 @@ body.popup-open {
   }
 }
 @media only screen and (max-width: 767px) {
+  .logo-item.logo-item--highlighted:nth-child(3), .logo-item.logo-item--highlighted:nth-child(4) {
+    width: 100% !important;
+  }
   .header .open .header__nav {
     width: calc(100% - 40px);
     left: 20px;
@@ -1454,6 +1483,8 @@ body.popup-open {
   .font--h1 {
     font-size: 32px;
     line-height: 40px;
+    letter-spacing: 0;
+    padding-top: 10px;
   }
   .font--h2-600 {
     font-size: 26px;
@@ -1559,6 +1590,12 @@ body.popup-open {
   .logo-section__with-background {
     padding-bottom: 30px;
     border-radius: 50px 50px 0 0;
+  }
+  .logo-section__with-background .logo-item.logo-item--highlighted:nth-child(3) {
+    padding-left: 0px;
+  }
+  .logo-section__with-background .logo-item.logo-item--highlighted:nth-child(4) {
+    padding-right: 0px;
   }
   .logo-section__with-background .logo-item__logos {
     display: flex;
