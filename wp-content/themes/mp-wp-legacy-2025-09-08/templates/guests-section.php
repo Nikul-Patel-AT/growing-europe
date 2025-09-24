@@ -1,10 +1,16 @@
 <?php
 $heading = get_sub_field( 'guests_section_title' );
+$sub_title = get_sub_field('guest_sub_text');
 ?>
 
 <section class="guests light_background padding-top-108 padding-bottom-108" id="guests">
     <div class="container">
-        <h2 class="guests__title font--h2-600 padding-bottom-56"><?php echo esc_html( $heading ); ?></h2>
+        <h2 class="guests__title font--h2-600"><?php echo esc_html( $heading ); ?></h2>
+        <?php if ( $sub_title ) : ?>
+                <div class="guests-subtitle font--p-18 padding-bottom-56">
+                    <?php echo wp_kses_post( $sub_title ); ?>
+                </div>
+        <?php endif; ?>
 
         <div class="guests__grid padding-bottom-56">
             <?php 

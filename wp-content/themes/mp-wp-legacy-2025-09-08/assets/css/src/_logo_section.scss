@@ -53,6 +53,26 @@
         padding-bottom: 52px;
         border-radius: 88px 88px 0 0;
 
+        .main-flex-logo-sec {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .logo-item.logo-item--highlighted:first-child,
+        .logo-item.logo-item--highlighted:nth-child(2){
+            width: 100%;
+        }
+        .logo-item.logo-item--highlighted:nth-child(3),
+        .logo-item.logo-item--highlighted:nth-child(4){
+            width: 50%;
+        }
+
+        .logo-item.logo-item--highlighted:nth-child(3) {
+            padding-left: 15%;
+        }
+        .logo-item.logo-item--highlighted:nth-child(4) {
+            padding-right: 15%;
+        }
+
         .logo-item {
 
             @media only screen and (max-width: 1366px) {

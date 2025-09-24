@@ -21,7 +21,7 @@
 
     <?php
 // Get ACF fields (Theme Header - Options Page)
-$logo      = get_field('logo', 'option');
+$logo      = get_field('logo', 'option'); 
 $header_menu = get_field('header_menu', 'option');
 $btn_label = get_field('button_label', 'option');
 $btn_url   = get_field('button_url', 'option');
