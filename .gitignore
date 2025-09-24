@@ -6,6 +6,7 @@
 # Note: if you want to stage/commit WP core files
 # you can delete this whole section/until Configuration.
 /wp-admin/
+/wp-content/ai1wm-backups/
 #/wp-content/index.php
 #/wp-content/languages
 #/wp-content/plugins/index.php
@@ -22,6 +23,7 @@ wp-config.php
 
 # Example themes
 #/wp-content/themes/twenty*/
+/wp-content/themes/mp-wbpk-gutenberg/node_modules/
 
 # Example plugin
 #/wp-content/plugins/hello.php
