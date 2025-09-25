@@ -1,0 +1,376 @@
+0000.000 (0) Opened log file at time: Wed, 24 Sep 2025 11:25:50 +0000 on https://growingeurope.stillnot.live
+0000.001 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.25.7 WP: 6.8.2 PHP: 8.1.33 (fpm-fcgi, Linux 787501.c.dedikuoti.lt 3.10.0 #1 SMP Tue Aug 25 11:59:26 MSK 2020 x86_64) MySQL: 5.5.68-MariaDB (max packet size=268435456) WPLANG: en_US Server: nginx/1.28.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 8.9M | 10M) multisite: N openssl: OpenSSL 1.0.2k  26 Jan 2017 mcrypt: N LANG:  WP Proxy: disabled ZipArchive::addFile: Y
+0000.003 (0) Free space on disk containing Updraft's temporary directory: 21159.8 MB
+0000.008 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.009 (0) Semaphore (fd, lW2JMzNH_options) being initialised
+0000.010 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.011 (0) Set semaphore last lock (fd) time to 2025-09-24 11:25:50
+0000.011 (0) Semaphore lock (fd) complete
+0000.012 (0) Backup run: resumption=0, nonce=0e354e40951d, file_nonce=0e354e40951d begun at=1758713150 (0s ago), job type=backup
+0000.013 (0) Scheduling a resumption (1) after 300 seconds (1758713450) in case this run gets aborted
+0000.023 (0) PHP event: code E_WARNING: file_exists(): open_basedir restriction in effect. File(/proc/user_beancounters) is not within the allowed path(s): (/var/www/vhosts/stillnot.live/:/tmp/) (line 188, wp-content/plugins/updraftplus/backup.php)
+0000.023 (0) Checking if we have a zip executable available
+0000.023 (0) PHP event: code E_WARNING: is_executable(): open_basedir restriction in effect. File(/usr/bin/zip) is not within the allowed path(s): (/var/www/vhosts/stillnot.live/:/tmp/) (line 1825, wp-content/plugins/updraftplus/class-updraftplus.php)
+0000.024 (0) PHP event: code E_WARNING: is_executable(): open_basedir restriction in effect. File(/bin/zip) is not within the allowed path(s): (/var/www/vhosts/stillnot.live/:/tmp/) (line 1825, wp-content/plugins/updraftplus/class-updraftplus.php)
+0000.024 (0) PHP event: code E_WARNING: is_executable(): open_basedir restriction in effect. File(/usr/local/bin/zip) is not within the allowed path(s): (/var/www/vhosts/stillnot.live/:/tmp/) (line 1825, wp-content/plugins/updraftplus/class-updraftplus.php)
+0000.024 (0) PHP event: code E_WARNING: is_executable(): open_basedir restriction in effect. File(/usr/sfw/bin/zip) is not within the allowed path(s): (/var/www/vhosts/stillnot.live/:/tmp/) (line 1825, wp-content/plugins/updraftplus/class-updraftplus.php)
+0000.024 (0) PHP event: code E_WARNING: is_executable(): open_basedir restriction in effect. File(/usr/xdg4/bin/zip) is not within the allowed path(s): (/var/www/vhosts/stillnot.live/:/tmp/) (line 1825, wp-content/plugins/updraftplus/class-updraftplus.php)
+0000.025 (0) PHP event: code E_WARNING: is_executable(): open_basedir restriction in effect. File(/opt/bin/zip) is not within the allowed path(s): (/var/www/vhosts/stillnot.live/:/tmp/) (line 1825, wp-content/plugins/updraftplus/class-updraftplus.php)
+0000.025 (0) Creation of backups of directories: beginning
+0000.026 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.027 (0) PHP event: Could not ask cPanel about disk space (open_basedir) - this is not an error (line 420, wp-content/plugins/updraftplus/class-updraftplus.php)
+0000.728 (0) Total entities for the zip file: 897 directories, 4826 files (0 skipped as non-modified), 79.4 MB
+0000.752 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.776 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.800 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.823 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.846 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.870 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 600 files added (on-disk size: 0 KB)
+0000.891 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 700 files added (on-disk size: 0 KB)
+0000.912 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 800 files added (on-disk size: 0 KB)
+0000.935 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 900 files added (on-disk size: 0 KB)
+0000.959 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0000.960 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (24.3 MB, 4826 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0003.019 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 1100 files added (on-disk size: 7490.8 KB)
+0003.042 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 1200 files added (on-disk size: 7490.8 KB)
+0003.064 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 1300 files added (on-disk size: 7490.8 KB)
+0003.086 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 1400 files added (on-disk size: 7490.8 KB)
+0003.112 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 1500 files added (on-disk size: 7490.8 KB)
+0003.135 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 1600 files added (on-disk size: 7490.8 KB)
+0003.161 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 1700 files added (on-disk size: 7490.8 KB)
+0003.184 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 1800 files added (on-disk size: 7490.8 KB)
+0003.208 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 1900 files added (on-disk size: 7490.8 KB)
+0003.231 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 2000 files added (on-disk size: 7490.8 KB)
+0003.232 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5.4 MB, 4826 files batched, 1001 (2002) added so far); re-opening (prior size: 7490.8 KB)
+0003.668 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 2100 files added (on-disk size: 9060 KB)
+0003.690 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 2200 files added (on-disk size: 9060 KB)
+0003.713 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 2300 files added (on-disk size: 9060 KB)
+0003.737 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 2400 files added (on-disk size: 9060 KB)
+0003.764 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 2500 files added (on-disk size: 9060 KB)
+0003.787 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 2600 files added (on-disk size: 9060 KB)
+0003.809 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 2700 files added (on-disk size: 9060 KB)
+0003.833 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 2800 files added (on-disk size: 9060 KB)
+0003.861 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 2900 files added (on-disk size: 9060 KB)
+0003.882 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 3000 files added (on-disk size: 9060 KB)
+0003.883 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (13.9 MB, 4826 files batched, 1001 (3003) added so far); re-opening (prior size: 9060 KB)
+0005.187 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 3100 files added (on-disk size: 13927.7 KB)
+0005.211 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 3200 files added (on-disk size: 13927.7 KB)
+0005.235 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 3300 files added (on-disk size: 13927.7 KB)
+0005.260 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 3400 files added (on-disk size: 13927.7 KB)
+0005.284 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 3500 files added (on-disk size: 13927.7 KB)
+0005.309 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 3600 files added (on-disk size: 13927.7 KB)
+0005.335 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 3700 files added (on-disk size: 13927.7 KB)
+0005.364 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 3800 files added (on-disk size: 13927.7 KB)
+0005.395 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 3900 files added (on-disk size: 13927.7 KB)
+0005.428 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 4000 files added (on-disk size: 13927.7 KB)
+0005.429 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (13.1 MB, 4826 files batched, 1001 (4004) added so far); re-opening (prior size: 13927.7 KB)
+0006.980 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 4100 files added (on-disk size: 18724.8 KB)
+0007.012 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 4200 files added (on-disk size: 18724.8 KB)
+0007.038 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 4300 files added (on-disk size: 18724.8 KB)
+0007.060 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 4400 files added (on-disk size: 18724.8 KB)
+0007.083 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 4500 files added (on-disk size: 18724.8 KB)
+0007.107 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 4600 files added (on-disk size: 18724.8 KB)
+0007.127 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 4700 files added (on-disk size: 18724.8 KB)
+0007.152 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.tmp: 4800 files added (on-disk size: 18724.8 KB)
+0009.043 (0) Creating zip file manifest (backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.list-temp.tmp)
+0009.079 (0) Successfully created zip file manifest (size: 406299)
+0009.304 (0) Created plugins zip (0) - 25307.2 KB in 9.3 s (2728.1 KB/s) (sha1: c576d350b20eb07335f8a2cf16d5303a9fd85623, sha256: e0cb49a8d11ae6859a480db59a818a8bcfcb8044c80e2babd1d84039054c5312)
+0009.308 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0009.309 (0) No remote despatch: user chose no remote backup service
+0009.309 (0) Recording as successfully uploaded: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip
+0009.309 (0) Deleting zip manifest (backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip.list.tmp)
+0009.310 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0009.311 (0) Number of backup sets in history: 0; groups (db): 1
+0009.311 (0) Number of backup sets in history: 0; groups (files): 1
+0009.311 (0) Retain: saving new backup history (sets now: 0) and finishing retain operation
+0009.313 (0) Beginning creation of dump of themes (split every: 400 MB)
+0009.314 (0) PHP event: Could not ask cPanel about disk space (open_basedir) - this is not an error (line 420, wp-content/plugins/updraftplus/class-updraftplus.php)
+0010.383 (0) Total entities for the zip file: 814 directories, 8266 files (0 skipped as non-modified), 37.1 MB
+0010.408 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0010.432 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0010.458 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0010.488 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0010.515 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0010.544 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 600 files added (on-disk size: 0 KB)
+0010.572 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 700 files added (on-disk size: 0 KB)
+0010.598 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 800 files added (on-disk size: 0 KB)
+0010.625 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 900 files added (on-disk size: 0 KB)
+0010.652 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0010.653 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (8.9 MB, 8266 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0011.578 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 1100 files added (on-disk size: 2380 KB)
+0011.605 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 1200 files added (on-disk size: 2380 KB)
+0011.631 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 1300 files added (on-disk size: 2380 KB)
+0011.658 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 1400 files added (on-disk size: 2380 KB)
+0011.685 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 1500 files added (on-disk size: 2380 KB)
+0011.711 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 1600 files added (on-disk size: 2380 KB)
+0011.736 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 1700 files added (on-disk size: 2380 KB)
+0011.758 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 1800 files added (on-disk size: 2380 KB)
+0011.781 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 1900 files added (on-disk size: 2380 KB)
+0011.803 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 2000 files added (on-disk size: 2380 KB)
+0011.804 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (3.2 MB, 8266 files batched, 1001 (2002) added so far); re-opening (prior size: 2380 KB)
+0012.235 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 2100 files added (on-disk size: 3531 KB)
+0012.257 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 2200 files added (on-disk size: 3531 KB)
+0012.281 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 2300 files added (on-disk size: 3531 KB)
+0012.305 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 2400 files added (on-disk size: 3531 KB)
+0012.329 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 2500 files added (on-disk size: 3531 KB)
+0012.353 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 2600 files added (on-disk size: 3531 KB)
+0012.378 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 2700 files added (on-disk size: 3531 KB)
+0012.401 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 2800 files added (on-disk size: 3531 KB)
+0012.427 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 2900 files added (on-disk size: 3531 KB)
+0012.451 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 3000 files added (on-disk size: 3531 KB)
+0012.452 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (4.6 MB, 8266 files batched, 1001 (3003) added so far); re-opening (prior size: 3531 KB)
+0012.994 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 3100 files added (on-disk size: 4808 KB)
+0013.019 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 3200 files added (on-disk size: 4808 KB)
+0013.042 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 3300 files added (on-disk size: 4808 KB)
+0013.070 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 3400 files added (on-disk size: 4808 KB)
+0013.099 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 3500 files added (on-disk size: 4808 KB)
+0013.123 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 3600 files added (on-disk size: 4808 KB)
+0013.150 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 3700 files added (on-disk size: 4808 KB)
+0013.178 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 3800 files added (on-disk size: 4808 KB)
+0013.206 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 3900 files added (on-disk size: 4808 KB)
+0013.233 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 4000 files added (on-disk size: 4808 KB)
+0013.235 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (4.3 MB, 8266 files batched, 1001 (4004) added so far); re-opening (prior size: 4808 KB)
+0013.806 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 4100 files added (on-disk size: 6238.4 KB)
+0013.831 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 4200 files added (on-disk size: 6238.4 KB)
+0013.861 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 4300 files added (on-disk size: 6238.4 KB)
+0013.891 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 4400 files added (on-disk size: 6238.4 KB)
+0013.921 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 4500 files added (on-disk size: 6238.4 KB)
+0013.952 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 4600 files added (on-disk size: 6238.4 KB)
+0013.981 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 4700 files added (on-disk size: 6238.4 KB)
+0014.015 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 4800 files added (on-disk size: 6238.4 KB)
+0014.045 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 4900 files added (on-disk size: 6238.4 KB)
+0014.079 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 5000 files added (on-disk size: 6238.4 KB)
+0014.081 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (2.5 MB, 8266 files batched, 1001 (5005) added so far); re-opening (prior size: 6238.4 KB)
+0014.687 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 5100 files added (on-disk size: 7180.8 KB)
+0014.724 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 5200 files added (on-disk size: 7180.8 KB)
+0014.761 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 5300 files added (on-disk size: 7180.8 KB)
+0014.793 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 5400 files added (on-disk size: 7180.8 KB)
+0014.825 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 5500 files added (on-disk size: 7180.8 KB)
+0014.856 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 5600 files added (on-disk size: 7180.8 KB)
+0014.885 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 5700 files added (on-disk size: 7180.8 KB)
+0014.923 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 5800 files added (on-disk size: 7180.8 KB)
+0014.963 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 5900 files added (on-disk size: 7180.8 KB)
+0014.999 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 6000 files added (on-disk size: 7180.8 KB)
+0015.002 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (1.1 MB, 8266 files batched, 1001 (6006) added so far); re-opening (prior size: 7180.8 KB)
+0015.381 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 6100 files added (on-disk size: 7797.2 KB)
+0015.410 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 6200 files added (on-disk size: 7797.2 KB)
+0015.438 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 6300 files added (on-disk size: 7797.2 KB)
+0015.467 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 6400 files added (on-disk size: 7797.2 KB)
+0015.493 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 6500 files added (on-disk size: 7797.2 KB)
+0015.519 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 6600 files added (on-disk size: 7797.2 KB)
+0015.544 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 6700 files added (on-disk size: 7797.2 KB)
+0015.567 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 6800 files added (on-disk size: 7797.2 KB)
+0015.594 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 6900 files added (on-disk size: 7797.2 KB)
+0015.621 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 7000 files added (on-disk size: 7797.2 KB)
+0015.623 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (4.9 MB, 8266 files batched, 1001 (7007) added so far); re-opening (prior size: 7797.2 KB)
+0016.311 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 7100 files added (on-disk size: 9264.2 KB)
+0016.337 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 7200 files added (on-disk size: 9264.2 KB)
+0016.363 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 7300 files added (on-disk size: 9264.2 KB)
+0016.389 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 7400 files added (on-disk size: 9264.2 KB)
+0016.414 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 7500 files added (on-disk size: 9264.2 KB)
+0016.441 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 7600 files added (on-disk size: 9264.2 KB)
+0016.471 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 7700 files added (on-disk size: 9264.2 KB)
+0016.495 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 7800 files added (on-disk size: 9264.2 KB)
+0016.519 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 7900 files added (on-disk size: 9264.2 KB)
+0016.541 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 8000 files added (on-disk size: 9264.2 KB)
+0016.543 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (6.7 MB, 8266 files batched, 1001 (8008) added so far); re-opening (prior size: 9264.2 KB)
+0017.285 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 8100 files added (on-disk size: 11206.9 KB)
+0017.309 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.tmp: 8200 files added (on-disk size: 11206.9 KB)
+0017.567 (0) Creating zip file manifest (backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.list-temp.tmp)
+0017.626 (0) Successfully created zip file manifest (size: 749735)
+0017.731 (0) Created themes zip (0) - 11534.4 KB in 8.4 s (1370.4 KB/s) (sha1: aedc2b87d842ba5c5f062cf4652fc85e9dea00c8, sha256: d4ff4a3d8498c1087e2af3b3599f7a172cfcf51aa7a7380c1ccb81e6b3e1c422)
+0017.739 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0017.739 (0) No remote despatch: user chose no remote backup service
+0017.739 (0) Recording as successfully uploaded: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip
+0017.740 (0) Deleting zip manifest (backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip.list.tmp)
+0017.741 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0017.742 (0) Number of backup sets in history: 0; groups (db): 1
+0017.742 (0) Number of backup sets in history: 0; groups (files): 1
+0017.743 (0) Retain: saving new backup history (sets now: 0) and finishing retain operation
+0017.745 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots,wp-staging
+0017.746 (0) Looking for candidates to backup in: /var/www/vhosts/stillnot.live/growingeurope.stillnot.live/wp-content/uploads
+0017.746 (0) finding files: smush: adding to list (1)
+0017.746 (0) finding files: .htaccess: adding to list (2)
+0017.746 (0) finding files: 2025: adding to list (3)
+0017.747 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0017.748 (0) PHP event: Could not ask cPanel about disk space (open_basedir) - this is not an error (line 420, wp-content/plugins/updraftplus/class-updraftplus.php)
+0017.758 (0) Total entities for the zip file: 3 directories, 109 files (0 skipped as non-modified), 6.9 MB
+0017.779 (0) Zip: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0017.843 (0) Creating zip file manifest (backup_2025-09-24-1125_Growing_Europe_0e354e40951d-uploads.zip.list-temp.tmp)
+0017.845 (0) Successfully created zip file manifest (size: 6432)
+0017.910 (0) Created uploads zip (0) - 7067.8 KB in 0.2 s (43802.2 KB/s) (sha1: 17dc07dd5bae89d7b47555f0b2ed062ba9368d70, sha256: 9b372754711fca7973c82d7af6fb7365f8bcdf8e6f57a548f2e6a5efccf59220)
+0017.912 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0017.912 (0) No remote despatch: user chose no remote backup service
+0017.912 (0) Recording as successfully uploaded: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-uploads.zip
+0017.913 (0) Deleting zip manifest (backup_2025-09-24-1125_Growing_Europe_0e354e40951d-uploads.zip.list.tmp)
+0017.914 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0017.914 (0) Number of backup sets in history: 0; groups (db): 1
+0017.915 (0) Number of backup sets in history: 0; groups (files): 1
+0017.915 (0) Retain: saving new backup history (sets now: 0) and finishing retain operation
+0017.916 (0) No backup of mu-plugins: excluded by user's options
+0017.917 (0) Beginning backup of other directories found in the content directory (index: 0)
+0017.918 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0017.918 (0) Looking for candidates to backup in: /var/www/vhosts/stillnot.live/growingeurope.stillnot.live/wp-content
+0017.918 (0) finding files: uploads: skipping: this is the uploads directory
+0017.918 (0) finding files: plugins: skipping: this is the plugins directory
+0017.919 (0) finding files: ai1wm-backups: skipping: excluded by options (glob)
+0017.919 (0) finding files: upgrade: skipping: excluded by options
+0017.919 (0) finding files: index.php: adding to list (1)
+0017.919 (0) finding files: .htaccess: adding to list (2)
+0017.920 (0) finding files: uploads-webpc: adding to list (3)
+0017.920 (0) finding files: themes: skipping: this is the themes directory
+0017.920 (0) finding files: updraft: skipping: this is the updraft directory
+0017.921 (0) finding files: upgrade-temp-backup: adding to list (4)
+0017.922 (0) PHP event: Could not ask cPanel about disk space (open_basedir) - this is not an error (line 420, wp-content/plugins/updraftplus/class-updraftplus.php)
+0017.924 (0) Total entities for the zip file: 3 directories, 3 files (0 skipped as non-modified), 0 MB
+0017.929 (0) Creating zip file manifest (backup_2025-09-24-1125_Growing_Europe_0e354e40951d-others.zip.list-temp.tmp)
+0017.929 (0) Successfully created zip file manifest (size: 95)
+0017.931 (0) Created others zip (0) - 1.3 KB in 0 s (164.6 KB/s) (sha1: 1d15449343eeaf73afd2a7b2579a52ffeab3c042, sha256: e58922e23fdeb2bcd49fcfa69de276aaa51ccaf83641232972300abf507be495)
+0017.933 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0017.933 (0) No remote despatch: user chose no remote backup service
+0017.933 (0) Recording as successfully uploaded: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-others.zip
+0017.934 (0) Deleting zip manifest (backup_2025-09-24-1125_Growing_Europe_0e354e40951d-others.zip.list.tmp)
+0017.935 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0017.935 (0) Number of backup sets in history: 0; groups (db): 1
+0017.936 (0) Number of backup sets in history: 0; groups (files): 1
+0017.936 (0) Retain: saving new backup history (sets now: 0) and finishing retain operation
+0017.939 (0) Saving backup status to database (elements: 8)
+0017.940 (0) Beginning creation of database dump (WordPress DB)
+0017.940 (0) Couldn't get the sql_mode value (N;); will not attempt any adjustment
+0017.941 (0) PHP event: code E_WARNING: is_executable(): open_basedir restriction in effect. File(/usr/bin/mysqldump) is not within the allowed path(s): (/var/www/vhosts/stillnot.live/:/tmp/) (line 1708, wp-content/plugins/updraftplus/class-updraftplus.php)
+0017.941 (0) PHP event: code E_WARNING: is_executable(): open_basedir restriction in effect. File(/bin/mysqldump) is not within the allowed path(s): (/var/www/vhosts/stillnot.live/:/tmp/) (line 1708, wp-content/plugins/updraftplus/class-updraftplus.php)
+0017.942 (0) PHP event: code E_WARNING: is_executable(): open_basedir restriction in effect. File(/usr/local/bin/mysqldump) is not within the allowed path(s): (/var/www/vhosts/stillnot.live/:/tmp/) (line 1708, wp-content/plugins/updraftplus/class-updraftplus.php)
+0017.942 (0) PHP event: code E_WARNING: is_executable(): open_basedir restriction in effect. File(/usr/sfw/bin/mysqldump) is not within the allowed path(s): (/var/www/vhosts/stillnot.live/:/tmp/) (line 1708, wp-content/plugins/updraftplus/class-updraftplus.php)
+0017.942 (0) PHP event: code E_WARNING: is_executable(): open_basedir restriction in effect. File(/usr/xdg4/bin/mysqldump) is not within the allowed path(s): (/var/www/vhosts/stillnot.live/:/tmp/) (line 1708, wp-content/plugins/updraftplus/class-updraftplus.php)
+0017.943 (0) PHP event: code E_WARNING: is_executable(): open_basedir restriction in effect. File(/opt/bin/mysqldump) is not within the allowed path(s): (/var/www/vhosts/stillnot.live/:/tmp/) (line 1708, wp-content/plugins/updraftplus/class-updraftplus.php)
+0017.948 (0) Table lW2JMzNH_options: Total expected rows (via COUNT): 335
+0017.948 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0017.995 (0) Table lW2JMzNH_options: Rows added in this batch (next record: 1348): 331 (uncompressed bytes in this segment=1182805) in 0.05 seconds
+0017.998 (0) Table lW2JMzNH_options: finishing file(s) (2, 238.8 KB)
+0018.000 (0) Table lW2JMzNH_users: Total expected rows (via COUNT): 2
+0018.000 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0018.001 (0) Table lW2JMzNH_users: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=1663) in 0.00 seconds
+0018.003 (0) Table lW2JMzNH_users: finishing file(s) (2, 0.7 KB)
+0018.007 (0) Table lW2JMzNH_usermeta: Total expected rows (via COUNT): 62
+0018.007 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0018.009 (0) Table lW2JMzNH_usermeta: Rows added in this batch (next record: 63): 62 (uncompressed bytes in this segment=9206) in 0.00 seconds
+0018.011 (0) Table lW2JMzNH_usermeta: finishing file(s) (2, 3.1 KB)
+0018.013 (0) Table lW2JMzNH_commentmeta: Total expected rows (via COUNT): 0
+0018.014 (0) Table lW2JMzNH_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=709) in 0.00 seconds
+0018.017 (0) Table lW2JMzNH_commentmeta: finishing file(s) (2, 0.4 KB)
+0018.019 (0) Table lW2JMzNH_comments: Total expected rows (via COUNT): 1
+0018.020 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0018.021 (0) Table lW2JMzNH_comments: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=2144) in 0.00 seconds
+0018.023 (0) Table lW2JMzNH_comments: finishing file(s) (2, 0.8 KB)
+0018.025 (0) Table lW2JMzNH_links: Total expected rows (via COUNT): 0
+0018.025 (0) Table lW2JMzNH_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1306) in 0.00 seconds
+0018.027 (0) Table lW2JMzNH_links: finishing file(s) (2, 0.5 KB)
+0018.051 (0) Table lW2JMzNH_postmeta: Total expected rows (approximate): 44552
+0018.420 (0) Table lW2JMzNH_postmeta: Rows added in this batch (next record: 44656): 44434 (uncompressed bytes in this segment=4393838) in 0.39 seconds
+0018.424 (0) Table lW2JMzNH_postmeta: finishing file(s) (2, 629.1 KB)
+0018.427 (0) Table lW2JMzNH_posts: Total expected rows (via COUNT): 264
+0018.428 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0018.437 (0) Table lW2JMzNH_posts: Rows added in this batch (next record: 292): 264 (uncompressed bytes in this segment=127066) in 0.01 seconds
+0018.440 (0) Table lW2JMzNH_posts: finishing file(s) (2, 14.5 KB)
+0018.441 (0) Table lW2JMzNH_term_relationships: Total expected rows (approximate): 6
+0018.442 (0) Table lW2JMzNH_term_relationships: Rows added in this batch (next record: 100000): 6 (uncompressed bytes in this segment=810) in 0.00 seconds
+0018.444 (0) Table lW2JMzNH_term_relationships: finishing file(s) (2, 0.4 KB)
+0018.447 (0) Table lW2JMzNH_term_taxonomy: Total expected rows (via COUNT): 2
+0018.447 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0018.448 (0) Table lW2JMzNH_term_taxonomy: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=987) in 0.00 seconds
+0018.450 (0) Table lW2JMzNH_term_taxonomy: finishing file(s) (2, 0.5 KB)
+0018.452 (0) Table lW2JMzNH_termmeta: Total expected rows (via COUNT): 0
+0018.453 (0) Table lW2JMzNH_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=682) in 0.00 seconds
+0018.455 (0) Table lW2JMzNH_termmeta: finishing file(s) (2, 0.4 KB)
+0018.457 (0) Table lW2JMzNH_terms: Total expected rows (via COUNT): 2
+0018.457 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0018.458 (0) Table lW2JMzNH_terms: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=805) in 0.00 seconds
+0018.460 (0) Table lW2JMzNH_terms: finishing file(s) (2, 0.4 KB)
+0018.462 (0) Table lW2JMzNH_smush_dir_images: Total expected rows (via COUNT): 0
+0018.463 (0) Table lW2JMzNH_smush_dir_images: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1106) in 0.00 seconds
+0018.465 (0) Table lW2JMzNH_smush_dir_images: finishing file(s) (2, 0.5 KB)
+0018.468 (0) Table lW2JMzNH_yoast_indexable: Total expected rows (via COUNT): 4
+0018.468 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0018.470 (0) Table lW2JMzNH_yoast_indexable: Rows added in this batch (next record: 4): 4 (uncompressed bytes in this segment=5637) in 0.00 seconds
+0018.473 (0) Table lW2JMzNH_yoast_indexable: finishing file(s) (2, 1.4 KB)
+0018.475 (0) Table lW2JMzNH_yoast_indexable_hierarchy: Total expected rows (approximate): 4
+0018.476 (0) Table lW2JMzNH_yoast_indexable_hierarchy: Rows added in this batch (next record: 1000): 4 (uncompressed bytes in this segment=922) in 0.00 seconds
+0018.479 (0) Table lW2JMzNH_yoast_indexable_hierarchy: finishing file(s) (2, 0.4 KB)
+0018.481 (0) Table lW2JMzNH_yoast_migrations: Total expected rows (via COUNT): 24
+0018.481 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0018.483 (0) Table lW2JMzNH_yoast_migrations: Rows added in this batch (next record: 24): 24 (uncompressed bytes in this segment=1311) in 0.00 seconds
+0018.488 (0) Table lW2JMzNH_yoast_migrations: finishing file(s) (2, 0.6 KB)
+0018.496 (0) Table lW2JMzNH_yoast_primary_term: Total expected rows (via COUNT): 0
+0018.497 (0) Table lW2JMzNH_yoast_primary_term: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=886) in 0.00 seconds
+0018.503 (0) Table lW2JMzNH_yoast_primary_term: finishing file(s) (2, 0.4 KB)
+0018.505 (0) Table lW2JMzNH_yoast_seo_links: Total expected rows (via COUNT): 1
+0018.505 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0018.506 (0) Table lW2JMzNH_yoast_seo_links: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1195) in 0.00 seconds
+0018.508 (0) Table lW2JMzNH_yoast_seo_links: finishing file(s) (2, 0.5 KB)
+0018.508 (0) PHP event: code E_WARNING: filemtime(): stat failed for /var/www/vhosts/stillnot.live/growingeurope.stillnot.live/wp-content/updraft/backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db.gz (line 1923, wp-content/plugins/updraftplus/backup.php)
+0018.509 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_options.table.tmpr1349.gz (1/18/fopen): adding to final database dump
+0018.517 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_options.table.gz (2/18/fopen): adding to final database dump
+0018.517 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_users.table.tmpr3.gz (3/18/fopen): adding to final database dump
+0018.517 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_users.table.gz (4/18/fopen): adding to final database dump
+0018.518 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_usermeta.table.tmpr64.gz (5/18/fopen): adding to final database dump
+0018.518 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_usermeta.table.gz (6/18/fopen): adding to final database dump
+0018.518 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_commentmeta.table.tmpr0.gz (7/18/fopen): adding to final database dump
+0018.519 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_commentmeta.table.gz (8/18/fopen): adding to final database dump
+0018.519 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_comments.table.tmpr2.gz (9/18/fopen): adding to final database dump
+0018.519 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_comments.table.gz (10/18/fopen): adding to final database dump
+0018.520 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_links.table.tmpr0.gz (11/18/fopen): adding to final database dump
+0018.520 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_links.table.gz (12/18/fopen): adding to final database dump
+0018.520 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_postmeta.table.tmpr44657.gz (13/18/fopen): adding to final database dump
+0018.538 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_postmeta.table.gz (14/18/fopen): adding to final database dump
+0018.539 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_posts.table.tmpr293.gz (15/18/fopen): adding to final database dump
+0018.540 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_posts.table.gz (16/18/fopen): adding to final database dump
+0018.540 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_term_relationships.table.tmpr100001.gz (17/18/fopen): adding to final database dump
+0018.540 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_term_relationships.table.gz (18/18/fopen): adding to final database dump
+0018.540 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_term_taxonomy.table.tmpr3.gz (19/18/fopen): adding to final database dump
+0018.541 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_term_taxonomy.table.gz (20/18/fopen): adding to final database dump
+0018.541 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_termmeta.table.tmpr0.gz (21/18/fopen): adding to final database dump
+0018.541 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_termmeta.table.gz (22/18/fopen): adding to final database dump
+0018.542 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_terms.table.tmpr3.gz (23/18/fopen): adding to final database dump
+0018.542 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_terms.table.gz (24/18/fopen): adding to final database dump
+0018.542 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_smush_dir_images.table.tmpr0.gz (25/18/fopen): adding to final database dump
+0018.543 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_smush_dir_images.table.gz (26/18/fopen): adding to final database dump
+0018.543 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_yoast_indexable.table.tmpr5.gz (27/18/fopen): adding to final database dump
+0018.543 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_yoast_indexable.table.gz (28/18/fopen): adding to final database dump
+0018.543 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_yoast_indexable_hierarchy.table.tmpr1001.gz (29/18/fopen): adding to final database dump
+0018.544 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_yoast_indexable_hierarchy.table.gz (30/18/fopen): adding to final database dump
+0018.544 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_yoast_migrations.table.tmpr25.gz (31/18/fopen): adding to final database dump
+0018.544 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_yoast_migrations.table.gz (32/18/fopen): adding to final database dump
+0018.544 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_yoast_primary_term.table.tmpr0.gz (33/18/fopen): adding to final database dump
+0018.545 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_yoast_primary_term.table.gz (34/18/fopen): adding to final database dump
+0018.545 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_yoast_seo_links.table.tmpr2.gz (35/18/fopen): adding to final database dump
+0018.545 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db-table-lW2JMzNH_yoast_seo_links.table.gz (36/18/fopen): adding to final database dump
+0018.547 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db.gz: finished writing out complete database file (893.6 KB)
+0018.559 (0) Total database tables backed up: 18 (backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db.gz, size: 915153, sha1: d6e8f8cbb5c6ff871b5bee5c0fe3e1a3d2a68c5e, sha256: b38baa27300e461c164609bcf5978f71a9f42752eb6a9b81be731f587cea02c2)
+0018.561 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-plugins.zip: plugins: This file has already been successfully processed
+0018.561 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-themes.zip: themes: This file has already been successfully processed
+0018.561 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-uploads.zip: uploads: This file has already been successfully processed
+0018.565 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-others.zip: others: This file has already been successfully processed
+0018.565 (0) backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db.gz: db: This file has not yet been successfully uploaded: will queue
+0018.566 (0) Saving backup history. Total backup size: 43.8 MB
+0018.566 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0018.567 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0018.567 (0) No remote despatch: user chose no remote backup service
+0018.568 (0) Recording as successfully uploaded: backup_2025-09-24-1125_Growing_Europe_0e354e40951d-db.gz
+0018.569 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0018.569 (0) Number of backup sets in history: 1; groups (db): 1
+0018.570 (0) Examining (for databases) backup set with group_id=0, nonce=0e354e40951d, datestamp=1758713150 (Sep 24 2025 11:25:50)
+0018.570 (0) This backup set is the backup set just made, so will not be deleted.
+0018.570 (0) Number of backup sets in history: 1; groups (files): 1
+0018.570 (0) Examining (for files) backup set with nonce=0e354e40951d, datestamp=1758713150 (Sep 24 2025 11:25:50)
+0018.570 (0) This backup set is the backup set just made, so will not be deleted.
+0018.570 (0) This backup set is the backup set just made, so will not be deleted.
+0018.570 (0) This backup set is the backup set just made, so will not be deleted.
+0018.570 (0) This backup set is the backup set just made, so will not be deleted.
+0018.570 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0018.570 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0018.571 (0) Resume backup (0e354e40951d, 0): finish run
+0018.572 (0) Decremented the semaphore (fd) by 1
+0018.572 (0) Semaphore (fd) unlocked
+0018.573 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0018.574 (0) No email will/can be sent - the user has not configured an email address.
+0018.574 (0) The backup succeeded and is now complete
