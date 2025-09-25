@@ -7,7 +7,7 @@ $copyright                  = get_field('footer_copyright', 'option');
 $section_id                  = get_field('section_id', 'option');
 ?>
 
-<footer id="<?php echo $section_id;?>">
+<footer id="<?php echo $section_id;?>"> 
   <div class="footer primary_background">
     <div class="container footer__flex_container">
 
