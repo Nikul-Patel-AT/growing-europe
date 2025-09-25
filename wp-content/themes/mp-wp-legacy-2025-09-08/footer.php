@@ -4,7 +4,7 @@ $footer_section_description = get_field('footer_section_description', 'option');
 $footer_left                = get_field('footer_left_section', 'option');
 $footer_right               = get_field('footer_right_section', 'option');
 $copyright                  = get_field('footer_copyright', 'option');
-$section_id                  = get_field('section_id', 'option');
+$section_id                  = get_field('section_id', 'option'); 
 ?>
 
 <footer id="<?php echo $section_id;?>"> 
