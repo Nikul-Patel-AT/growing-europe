@@ -79,10 +79,10 @@ document.addEventListener('DOMContentLoaded', function(){
 jQuery(document).ready(function($) {
     var perPage = parseInt($('#show-more').data('perpage'));
     var $guests = $('.guest-card');
-    var $hiddenGuests = $guests.slice(perPage);
+    //var $hiddenGuests = $guests.slice(perPage);
 
     // initially hide extra guests
-    $hiddenGuests.hide();
+    //$hiddenGuests.hide();
 
     $('#show-more').on('click', function(e) {
         e.preventDefault();
