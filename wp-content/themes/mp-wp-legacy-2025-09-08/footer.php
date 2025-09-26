@@ -25,7 +25,7 @@ $section_id                  = get_field('section_id', 'option');
 
       <!-- Left Section -->
       <?php if ($footer_left): ?>
-        <div class="footer__left">
+        <div class="footer__left footer__right">
           <?php if (!empty($footer_left['heading'])): ?>
             <p class="font--p-16 blue_secound_color"><?php echo esc_html($footer_left['heading']); ?></p>
           <?php endif; ?>
@@ -39,6 +39,59 @@ $section_id                  = get_field('section_id', 'option');
                   </a>
                 <?php endif;
               endforeach; ?>
+            </div>
+          <?php endif; ?>
+
+          <?php if (!empty($footer_left['global_contact_name'])): ?>
+            <h3 class="font--h4-500 blue_secound_color"><?php echo esc_html($footer_left['global_contact_name']); ?></h3>
+          <?php endif; ?>
+
+          <?php if (!empty($footer_left['global_email'])): ?>
+            <div class="contact-email-box">
+              <span class="btn btn--primary btn--icon">
+                <!-- Email SVG icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+                    viewBox="0 0 24 24" fill="none">
+                  <path d="M12.0012 15.5722C14.0094 15.5722 15.6372 13.9443 15.6372 11.9363C15.6372 9.92819 14.0094 8.30029 12.0012 8.30029C9.99313 8.30029 8.36523 9.92819 8.36523 11.9363C8.36523 13.9443 9.99313 15.5722 12.0012 15.5722Z" 
+                        stroke="white" stroke-width="2" stroke-linecap="round" 
+                        stroke-linejoin="round"/>
+                  <path d="M16.8288 19.2092C15.2086 20.2845 13.2756 20.7879 11.3367 20.6396C9.39772 20.4912 7.56388 19.6997 6.12607 18.3904C4.68826 17.0811 3.72884 15.3292 3.40007 13.4126C3.0713 11.496 3.392 9.52455 4.31128 7.81095C5.23057 6.09736 6.69578 4.73986 8.47445 3.95381C10.2531 3.16778 12.2433 2.99823 14.1292 3.47208C16.0153 3.94593 17.6889 5.03604 18.8849 6.56943C20.0807 8.1028 20.7303 9.99167 20.7305 11.9363C20.7305 13.9445 20.0032 15.5726 18.185 15.5726C16.3668 15.5726 15.6395 13.9445 15.6395 11.9363V8.29989" 
+                        stroke="white" stroke-width="2" stroke-linecap="round" 
+                        stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <div class="email-label-box">
+                <?php if (!empty($footer_left['global_email_label'])): ?>
+                  <p class="font--p-16 blue_secound_color">
+                    <?php echo esc_html($footer_left['global_email_label']); ?>
+                  </p>
+                <?php endif; ?>
+                <a href="mailto:<?php echo esc_attr($footer_left['global_email']); ?>" 
+                  class="font--h4-500 primary-color">
+                  <?php echo esc_html($footer_left['global_email']); ?>
+                </a>
+              </div>
+            </div>
+          <?php endif; ?>
+
+          <?php if (!empty($footer_left['global_phone_number'])): ?>
+            <div class="contact-email-box">
+              <span class="btn btn--primary btn--icon">
+                <!-- Phone SVG icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.1 12.81 19.8 19.8 0 0 1 .03 4.18 2 2 0 0 1 2 2h3a2 2 0 0 1 2 1.72c.12.93.38 1.84.77 2.68a2 2 0 0 1-.45 2.11L6.1 9.9a16 16 0 0 0 7 7l1.39-1.22a2 2 0 0 1 2.11-.45c.84.39 1.75.65 2.68.77A2 2 0 0 1 22 16.92z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <div class="email-label-box">
+                <?php if (!empty($footer_left['global_phone_number_label'])): ?>
+                  <p class="font--p-16 blue_secound_color">
+                    <?php echo esc_html($footer_left['global_phone_number_label']); ?>
+                  </p>
+                <?php endif; ?>
+                <a href="tel:<?php echo esc_attr($footer_right['phone_number']); ?>" class="font--h4-500 primary-color">
+                  <?php echo esc_html($footer_left['global_phone_number']); ?>
+                </a>
+              </div>
             </div>
           <?php endif; ?>
         </div>
@@ -70,6 +123,26 @@ $section_id                  = get_field('section_id', 'option');
                 <?php endif; ?>
                 <a href="mailto:<?php echo esc_attr($footer_right['contact_email']); ?>" class="font--h4-500 primary-color">
                   <?php echo esc_html($footer_right['contact_email']); ?>
+                </a>
+              </div>
+            </div>
+          <?php endif; ?>
+          <?php if (!empty($footer_right['phone_number'])): ?>
+            <div class="contact-email-box">
+              <span class="btn btn--primary btn--icon">
+                <!-- Phone SVG icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.1 12.81 19.8 19.8 0 0 1 .03 4.18 2 2 0 0 1 2 2h3a2 2 0 0 1 2 1.72c.12.93.38 1.84.77 2.68a2 2 0 0 1-.45 2.11L6.1 9.9a16 16 0 0 0 7 7l1.39-1.22a2 2 0 0 1 2.11-.45c.84.39 1.75.65 2.68.77A2 2 0 0 1 22 16.92z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <div class="email-label-box">
+                <?php if (!empty($footer_right['phone_number_label'])): ?>
+                  <p class="font--p-16 blue_secound_color">
+                    <?php echo esc_html($footer_right['phone_number_label']); ?>
+                  </p>
+                <?php endif; ?>
+                <a href="tel:<?php echo esc_attr($footer_right['phone_number']); ?>" class="font--h4-500 primary-color">
+                  <?php echo esc_html($footer_right['phone_number']); ?>
                 </a>
               </div>
             </div>
