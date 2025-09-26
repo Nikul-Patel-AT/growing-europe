@@ -145,11 +145,13 @@ html {
   background-color : $close_icon_color;
 }
 
-.section{
-    display: flex ;
+.section {
+  .container{
+    display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+  }
 
   &__date, &__title {
     color: $blue_secound_color;

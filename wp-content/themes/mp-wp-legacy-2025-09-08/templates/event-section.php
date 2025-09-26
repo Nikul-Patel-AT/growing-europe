@@ -11,6 +11,12 @@
                     $person_image       = get_sub_field('person_image');
                     $person_name        = get_sub_field('person_name');
                     $person_description = get_sub_field('person_description');
+                    $option      = get_sub_field('person_options');
+                    $person_button_text = get_sub_field('person_button_text');
+                    $link        = get_sub_field('person_link');
+                    $person_link_text = get_sub_field('person_link_text');
+                    $popup_content = get_sub_field('person_popup_content');
+                    $person_id = uniqid('guest_');
 
                     $image_url = '';
                     $image_alt = '';
@@ -52,6 +58,17 @@
                                     </div>
                                 <?php endif; ?>
                             </div>
+                            <?php if( $option == 'link' && $link ): ?>
+                            <a href="<?php echo esc_url($link); ?>" target="_blank" class="guest-link guest-card__link font--p-16"><?php echo esc_html($person_link_text); ?></a>
+                            <?php elseif( $option == 'popup' && $popup_content ): ?>
+
+                            <button class="guest-popup-btn guest-card__link font--p-16" data-popup-key="<?php echo esc_attr($person_id); ?>"><?php echo esc_html($person_link_text); ?></button>
+
+                            <!-- hidden content -->
+                            <div class="guest-popup-data" id="guest_content_<?php echo esc_attr($person_id); ?>" style="display:none;">
+                            <?php echo wp_kses_post($popup_content); ?>
+                            </div>
+                        <?php endif; ?>
                         </div>
 
                 <?php endwhile; ?>
