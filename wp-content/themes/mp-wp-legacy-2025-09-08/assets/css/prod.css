@@ -1073,6 +1073,15 @@ body.popup-open {
   font-weight: 500;
   line-height: 24px;
 }
+.popup .popup-content ol {
+  list-style-type: decimal;
+}
+.popup .popup-content ul li, .popup .popup-content ol li {
+  padding-bottom: 10px;
+}
+.popup .popup-content a, .popup .popup-content span {
+  color: #A3197C !important;
+}
 
 .popup:after {
   position: absolute;
