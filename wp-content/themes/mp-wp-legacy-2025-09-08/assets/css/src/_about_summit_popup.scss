@@ -89,6 +89,18 @@ body.popup-open {
             font-weight: 500;
             line-height: 24px;
         }
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        ul li, ol li {
+            padding-bottom: 10px;
+        }
+
+        a , span{
+            color: #A3197C !important;
+        }
     }
 }
 
