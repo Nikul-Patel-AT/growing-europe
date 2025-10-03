@@ -20,6 +20,17 @@
     background: linear-gradient(180deg, rgba(163, 25, 124, 0.25) 0%, rgba(197, 119, 198, 0.0375) 72.33%);
   }
 
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 48px;
+    flex-wrap: wrap; /* allow wrapping */
+  
+  .btn {
+    margin-top: 0;
+  }
+}
 
   .poup-button {
     text-align: center;

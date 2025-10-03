@@ -21,43 +21,43 @@
   gap: 24px;
   align-items: flex-start;
 
-  &__number{
+  &__number {
     width: 6%;
     padding: 0 !important;
   }
 
   &__time {
-    width: 16%;
+    width: 18%;
     padding: 0 !important;
     font-weight: 600;
   }
 
-   &__heading {
-    width: 28%;
+  &__heading {
+    width: 30%;
     padding: 0 !important;
     font-weight: 900;
   }
 
   &__content {
-    width: 50%;
+    flex: 1 0 0;
   }
 
-   &__content strong {
-  font-weight: bold !important;
-   }
-  
+  &__content strong {
+    font-weight: bold !important;
+  }
+
   &__content-hightlighted {
     width: 94%;
   }
 
 
   &--highlight {
-    background: $primary-color; 
+    background: $primary-color;
     color: $text-color;
     border-radius: 36px;
     padding: 32px;
 
- 
+
 
     .program-item__part {
       font-size: 14px;
@@ -77,11 +77,11 @@
 
     .program-item__desc {
       color: #f1e6f4;
-      
+
     }
 
-    .program-item__desc strong{
-      font-weight: bold !important;  
+    .program-item__desc strong {
+      font-weight: bold !important;
     }
 
 
