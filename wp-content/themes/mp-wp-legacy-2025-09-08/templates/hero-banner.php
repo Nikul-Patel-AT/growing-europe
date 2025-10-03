@@ -4,17 +4,6 @@ $bg_image       = get_sub_field('background_image');
 $headline       = get_sub_field('headline');
 $main_heading   = get_sub_field('main_heading');
 $intro_text     = get_sub_field('intro_text');
-// $hero_button    = get_sub_field('hero_button'); // group
-// $button_type    = $hero_button['hero_button_type'] ?? '';
-// $button_label   = $hero_button['hero_button_label'] ?? '';
-// $button_link    = $hero_button['hero_button_link'] ?? '';
-// $popup_selector = $hero_button['popup_selector'] ?? '';
-// $hero_button_two    = get_sub_field('hero_button_two'); // group
-// $button_type_two    = $hero_button_two['hero_button_type_two'] ?? '';
-// $button_label_two   = $hero_button_two['hero_button_label_two'] ?? '';
-// $button_link_two    = $hero_button_two['hero_button_link_two'] ?? '';
-// $popup_selector_two = $hero_button_two['popup_selector_two'] ?? '';
-
 $bg_style = $bg_image ? 'style="background-image: url(' . esc_url($bg_image['url']) . ')"' : '';
 ?>
 
