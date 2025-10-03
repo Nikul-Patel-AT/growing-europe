@@ -52,7 +52,11 @@ body.popup-open {
     }
 
     .popup-content {
-        padding: 60px 30px 30px 30px;
+        padding: 40px;
+
+        >h2, >h3 {
+            padding-right: 50px;
+        }
 
         h2 {
             color: $blue_secound_color;
