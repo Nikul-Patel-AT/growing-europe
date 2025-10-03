@@ -54,10 +54,6 @@ body.popup-open {
     .popup-content {
         padding: 60px 30px 30px 30px;
 
-        img {
-            max-width: 100% !important;
-        }
-
         h2 {
             color: $blue_secound_color;
             font-family: $body-font;
@@ -100,6 +96,10 @@ body.popup-open {
 
         ul li, ol li {
             padding-bottom: 10px;
+        }
+
+        img {
+            max-width: 100%;
         }
 
         a , span{

@@ -1089,6 +1089,9 @@ body.popup-open {
 .popup .popup-content ul li, .popup .popup-content ol li {
   padding-bottom: 10px;
 }
+.popup .popup-content img {
+  max-width: 100%;
+}
 .popup .popup-content a, .popup .popup-content span {
   color: #A3197C !important;
 }
