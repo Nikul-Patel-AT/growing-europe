@@ -22,7 +22,7 @@
     }
   }
 
-  &--secondary {
+  &--secondary , &-yellow {
     background: $secondary-color;
     color: $darkblue_color;
     border: 1px solid $secondary-color;
@@ -32,6 +32,18 @@
       background: transparent;
       border: 1px solid $text-color;
       color: $text-color;
+    }
+  }
+
+  &--secondary , &-white{
+    background: transparent;
+    border: 1px solid $text-color;
+    color: $text-color;
+
+    &:hover{
+      background: $secondary-color;
+      color: $darkblue_color;
+      border: 1px solid $secondary-color;
     }
   }
 

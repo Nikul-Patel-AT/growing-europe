@@ -826,7 +826,11 @@
         }
 
         .popup-content {
-            padding: 20px;
+            padding:20px;
+
+            >h2, >h3 {
+                padding-right: 40px;
+            }
 
             h2 {
                 font-size: 25px;
@@ -935,6 +939,12 @@
         }
     }
 
+    .popup-content {
+        ol, ul {
+            list-style: unset;
+            margin-left: 10px !important;
+        }
+    }
 }
 
 // End Max width 540px Media Query

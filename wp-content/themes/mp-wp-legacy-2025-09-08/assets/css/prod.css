@@ -525,15 +525,25 @@ html {
 .btn--primary:hover {
   opacity: 0.9;
 }
-.btn--secondary {
+.btn--secondary, .btn-yellow {
   background: #FFD93E;
   color: #312C5E;
   border: 1px solid #FFD93E;
 }
-.btn--secondary:hover {
+.btn--secondary:hover, .btn-yellow:hover {
   background: transparent;
   border: 1px solid #fff;
   color: #fff;
+}
+.btn--secondary, .btn-white {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.btn--secondary:hover, .btn-white:hover {
+  background: #FFD93E;
+  color: #312C5E;
+  border: 1px solid #FFD93E;
 }
 .btn--icon {
   background: #A3197C;
@@ -1051,6 +1061,9 @@ body.popup-open {
 .popup .popup-content {
   padding: 40px;
 }
+.popup .popup-content > h2, .popup .popup-content > h3 {
+  padding-right: 50px;
+}
 .popup .popup-content h2 {
   color: #423D6C;
   font-family: "DM Sans", sans-serif;
@@ -1088,6 +1101,9 @@ body.popup-open {
 }
 .popup .popup-content ul li, .popup .popup-content ol li {
   padding-bottom: 10px;
+}
+.popup .popup-content img {
+  max-width: 100%;
 }
 .popup .popup-content a, .popup .popup-content span {
   color: #A3197C !important;
@@ -1708,6 +1724,9 @@ body.popup-open {
   .popup .popup-content {
     padding: 20px;
   }
+  .popup .popup-content > h2, .popup .popup-content > h3 {
+    padding-right: 40px;
+  }
   .popup .popup-content h2 {
     font-size: 25px;
     line-height: 35px;
@@ -1780,6 +1799,10 @@ body.popup-open {
     width: auto;
     /* or 100% if you want full-width */
     text-align: center;
+  }
+  .popup-content ol, .popup-content ul {
+    list-style: unset;
+    margin-left: 10px !important;
   }
 }
 
