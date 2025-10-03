@@ -1067,7 +1067,7 @@ body.popup-open {
   font-size: 24px;
   font-style: normal;
   font-weight: 800;
-  line-height: 24px; /* 100% */
+  line-height: normal; /* 100% */
   letter-spacing: -0.24px;
   margin-bottom: 20px;
 }
