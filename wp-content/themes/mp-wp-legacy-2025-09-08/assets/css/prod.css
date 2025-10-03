@@ -525,15 +525,25 @@ html {
 .btn--primary:hover {
   opacity: 0.9;
 }
-.btn--secondary {
+.btn--secondary, .btn--yellow {
   background: #FFD93E;
   color: #312C5E;
   border: 1px solid #FFD93E;
 }
-.btn--secondary:hover {
+.btn--secondary:hover, .btn--yellow:hover {
   background: transparent;
   border: 1px solid #fff;
   color: #fff;
+}
+.btn--secondary, .btn--white {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.btn--secondary:hover, .btn--white:hover {
+  background: #FFD93E;
+  color: #312C5E;
+  border: 1px solid #FFD93E;
 }
 .btn--icon {
   background: #A3197C;
