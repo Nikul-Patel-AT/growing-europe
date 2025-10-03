@@ -173,6 +173,8 @@ $research_banner_image  = get_field('research_banner_image', 'option');
 $research_content = get_field('research_content', 'option');
 $organizing_institutions_image  = get_field('organizing_institutions_image', 'option');
 $organizing_institutions_content = get_field('organizing_institutions_content', 'option');
+$save_every_newborn_image  = get_field('save_every_newborn_image', 'option');
+$save = get_field('save_every_newborn_content', 'option');
 ?>
 
 <div id="about-summit-popup" class="popup" style="display:none;">
@@ -194,7 +196,6 @@ $organizing_institutions_content = get_field('organizing_institutions_content', 
     </div>
   </div>
 </div>
-
 
 <!-- Travel & Accommodation Pop Up Section -->
 <div id="travel-accommodation-popup" class="popup" style="display:none;">
@@ -255,7 +256,26 @@ $organizing_institutions_content = get_field('organizing_institutions_content', 
   </div>
 </div>
 
+<!-- Save Every Newborn Pop Up Section -->
+<div id="save-every-newborn" class="popup" style="display:none;">
+  <div class="popup__main-container">
+    <div class="popup-inner">
+      <?php if ($save_every_newborn_image): ?>
+        <img src="<?php echo esc_url($save_every_newborn_image['url']); ?>" alt="<?php echo esc_attr($save_every_newborn_image['alt']); ?>" class="popup-image">
+      <?php endif; ?>
 
+      <?php if ($save_every_newborn_content): ?>
+        <div class="popup-content"><?php echo apply_filters('the_content', $save_every_newborn_content); ?></div>
+      <?php endif; ?>
+
+      <button class="popup-close btn btn--primary btn--icon close_icon_color">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M8.25729 7.75736L16.7426 16.2426M16.7426 7.75736L8.25729 16.2426" stroke="#492447" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
 
 <?php wp_footer(); ?>
 </body>
