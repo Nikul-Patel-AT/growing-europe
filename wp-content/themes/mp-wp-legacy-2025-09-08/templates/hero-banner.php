@@ -46,13 +46,13 @@ $bg_style = $bg_image ? 'style="background-image: url(' . esc_url($bg_image['url
                     <?php if ($button_type && $button_label): ?>
                         <?php if ($button_type === 'redirect' && $button_link): ?>
                             <a href="<?php echo esc_url($button_link); ?>"
-                                class="hero-button btn btn <?php echo esc_attr($button_color ?: 'secondary'); ?> margin-top-48">
+                                class="hero-button btn btn-<?php echo esc_attr($button_color ?: 'secondary'); ?> margin-top-48">
                                 <?php echo esc_html($button_label); ?>
                             </a>
 
                         <?php elseif ($button_type === 'popup' && $popup_selector): ?>
                             <div class="popup-button">
-                                <button class="hero-button open-popup btn btn--<?php echo esc_attr($button_color ?: 'secondary'); ?>"
+                                <button class="hero-button open-popup btn btn-<?php echo esc_attr($button_color ?: 'secondary'); ?>"
                                     data-popup-selector="<?php echo esc_attr($popup_selector); ?>">
                                     <?php echo esc_html($button_label); ?>
                                 </button>
