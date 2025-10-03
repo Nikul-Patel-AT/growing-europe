@@ -1049,7 +1049,7 @@ body.popup-open {
   height: auto;
 }
 .popup .popup-content {
-  padding: 40px;
+  padding: 60px 30px 30px 30px;
 }
 .popup .popup-content h2 {
   color: #423D6C;
@@ -1375,7 +1375,7 @@ body.popup-open {
     border-radius: 30px;
   }
   .popup .popup-content {
-    padding: 30px;
+    padding: 60px 30px 30px 30px;
   }
   .popup .popup-content h2 {
     font-size: 30px;
@@ -1706,7 +1706,7 @@ body.popup-open {
     padding: 6px;
   }
   .popup .popup-content {
-    padding: 20px;
+    padding: 60px 20px 20px 20px;
   }
   .popup .popup-content h2 {
     font-size: 25px;
