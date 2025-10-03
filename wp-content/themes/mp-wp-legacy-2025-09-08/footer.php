@@ -174,7 +174,7 @@ $research_content = get_field('research_content', 'option');
 $organizing_institutions_image  = get_field('organizing_institutions_image', 'option');
 $organizing_institutions_content = get_field('organizing_institutions_content', 'option');
 $save_every_newborn_image  = get_field('save_every_newborn_image', 'option');
-$save = get_field('save_every_newborn_content', 'option');
+$save_every_newborn_content = get_field('save_every_newborn_content', 'option');
 ?>
 
 <div id="about-summit-popup" class="popup" style="display:none;">
