@@ -66,7 +66,7 @@
 
                             <!-- hidden content -->
                             <div class="guest-popup-data" id="guest_content_<?php echo esc_attr($person_id); ?>" style="display:none;">
-                            <?php echo wp_kses_post($popup_content); ?>
+                            <?php echo apply_filters('the_content', $popup_content); ?>
                             </div>
                         <?php endif; ?>
                         </div>
