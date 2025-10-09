@@ -292,11 +292,44 @@ a {
   width: 40px;
   height: 40px;
 }
-.footer__right .contact-email-box {
+.footer__left .footer-left-image-sec {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer__left .left-content-sec {
+  width: calc(100% - 230px);
+}
+.footer__left .contact-phone-box {
   display: flex;
   align-items: center;
   gap: 16px;
   padding-top: 16px;
+}
+.footer__right .contact-email-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.footer__right .contact-phone-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 16px;
+}
+.footer__right .footer-right-image-sec {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer__right .left-content-sec {
+  width: calc(100% - 230px);
 }
 .footer__right h3 {
   font-weight: 800;
@@ -1249,6 +1282,24 @@ body.popup-open {
     font-size: 20px;
     line-height: 24px;
   }
+  .footer__left .footer-left-image-sec {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: start;
+  }
+  .footer__left .left-content-sec {
+    width: 100%;
+  }
+  .footer__right .footer-right-image-sec {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: start;
+  }
+  .footer__right .left-content-sec {
+    width: 100%;
+  }
   .guests {
     border-radius: 88px;
     margin: 0 20px;
@@ -1768,6 +1819,20 @@ body.popup-open {
   .guests {
     margin: 0;
   }
+  .footer__left .left-side-image {
+    order: -1;
+    margin-top: 20px;
+  }
+  .footer__left .contact-phone-box {
+    padding-top: 16px;
+  }
+  .footer__right .right-side-image {
+    order: -1;
+    margin-top: 20px;
+  }
+  .footer__right .contact-phone-box {
+    padding-top: 16px;
+  }
 }
 @media only screen and (max-width: 540px) {
   .logo-item__logos {
@@ -1803,6 +1868,14 @@ body.popup-open {
   .popup-content ol, .popup-content ul {
     list-style: unset;
     margin-left: 10px !important;
+  }
+  .footer__left .left-side-image img {
+    width: 100%;
+    height: auto;
+  }
+  .footer__right .right-side-image img {
+    width: 100%;
+    height: auto;
   }
 }
 
