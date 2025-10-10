@@ -82,6 +82,10 @@
                 flex-wrap: wrap;
             }
 
+            .left-side-image img {
+                border-radius: 24px;
+            }
+
             .left-content-sec {
                 width: calc(100% - 230px);
             }
@@ -117,6 +121,10 @@
                 justify-content: center;
                 align-items: center;
                 flex-wrap: wrap;
+            }
+
+            .right-side-image img {
+                border-radius: 24px;
             }
 
             .left-content-sec {
