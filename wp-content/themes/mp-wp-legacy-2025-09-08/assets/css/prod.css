@@ -581,13 +581,12 @@ html {
 .btn--icon {
   background: #A3197C;
   color: #fff;
-  width: 48px;
-  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5px;
-  min-width: 48px;
 }
 .btn--icon:hover {
   opacity: 0.9;
@@ -1412,8 +1411,8 @@ body.popup-open {
     line-height: 24px;
   }
   .btn--icon {
-    width: 40px;
-    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
     padding: 5px;
   }
   .btn--icon svg {
@@ -1672,8 +1671,8 @@ body.popup-open {
     line-height: 20px;
   }
   .btn--icon {
-    width: 35px;
-    height: 35px;
+    min-width: 35px;
+    min-height: 35px;
   }
   .btn--icon svg {
     width: 24px;

@@ -50,13 +50,12 @@
   &--icon {
     background: $primary-color;
     color: $text-color;
-    width: 48px;
-    height: 48px;
+    min-width: 48px;
+    min-height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5px;
-    min-width: 48px;
 
     &:hover {
       opacity: 0.9;
