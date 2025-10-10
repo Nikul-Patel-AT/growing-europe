@@ -300,6 +300,9 @@ a {
   align-items: center;
   flex-wrap: wrap;
 }
+.footer__left .left-side-image img {
+  border-radius: 24px;
+}
 .footer__left .left-content-sec {
   width: calc(100% - 230px);
 }
@@ -327,6 +330,9 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+.footer__right .right-side-image img {
+  border-radius: 24px;
 }
 .footer__right .left-content-sec {
   width: calc(100% - 230px);
