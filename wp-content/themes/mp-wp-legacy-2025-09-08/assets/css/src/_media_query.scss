@@ -376,7 +376,7 @@
         }
 
         &__section {
-            padding: 30px;
+            padding: 30px 30px 30px 30px;
             border-radius: 26px;
         }
 
@@ -821,7 +821,11 @@
             padding: 20px;
             border-radius: 26px;
             flex-direction: column;
-            gap: 30px;
+            gap: 20px;
+        }
+
+        h2.footer-section-title {
+            padding: 0px 20px;
         }
 
         &__dec strong {
