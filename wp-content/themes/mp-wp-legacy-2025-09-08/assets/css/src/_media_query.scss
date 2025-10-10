@@ -170,6 +170,31 @@
             font-size: 20px;
             line-height: 24px;
         }
+
+        &__left {
+            .footer-left-image-sec {
+                flex-direction: column;
+                gap: 10px;
+                justify-content: center;
+                align-items: start;
+            }
+
+            .left-content-sec {
+                width: 100%;
+            }
+        }
+
+        &__right {
+            .footer-right-image-sec {
+                flex-direction: column;
+                gap: 10px;
+                justify-content: center;
+                align-items: start;
+            }
+            .left-content-sec {
+                width: 100%;
+            }
+        }
     }
 
     .guests {
@@ -312,8 +337,8 @@
         line-height: 24px;
 
         &--icon {
-            width: 40px;
-            height: 40px;
+            min-width: 40px;
+            min-height: 40px;
             padding: 5px;
 
             svg {
@@ -657,8 +682,8 @@
         line-height: 20px;
 
         &--icon {
-            width: 35px;
-            height: 35px;
+            min-width: 35px;
+            min-height: 35px;
 
             svg {
                 width: 24px;
@@ -796,7 +821,7 @@
             padding: 20px;
             border-radius: 26px;
             flex-direction: column;
-            gap: 20px;
+            gap: 30px;
         }
 
         &__dec strong {
@@ -887,6 +912,29 @@
     .guests {
         margin: 0;
     }
+
+    .footer {
+
+        &__left {
+            .left-side-image {
+                order: -1;
+                margin-top: 20px;
+            }
+            .contact-phone-box {
+                padding-top: 16px;
+            }
+        }
+
+        &__right {
+            .right-side-image {
+                order: -1;
+                margin-top: 20px;
+            }
+            .contact-phone-box {
+                padding-top: 16px;
+            }
+        }
+    }
 }
 
 // End Max width 767px Media Query
@@ -945,6 +993,24 @@
             margin-left: 10px !important;
         }
     }
+
+    .footer {
+
+        &__left {
+            .left-side-image img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__right {
+            .right-side-image img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
 }
 
 // End Max width 540px Media Query
