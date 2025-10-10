@@ -2,6 +2,7 @@
 $footer_section_title       = get_field('footer_section_title', 'option');
 $footer_section_description = get_field('footer_section_description', 'option');
 $photo_section_title = get_field('photos_section_title','option');
+$contact_info_title = get_field('contact_info_title','option');
 $footer_left                = get_field('footer_left_section', 'option');
 $footer_right               = get_field('footer_right_section', 'option');
 $copyright                  = get_field('footer_copyright', 'option');
@@ -166,11 +167,13 @@ $section_id                  = get_field('section_id', 'option');
       </div>
 
       <div class="footer__section white_background">
-        <?php if ($footer_section_title): ?>
-          <h2 class="footer__heading font--40-600"><?php echo esc_html($footer_section_title); ?></h2>
+
+        <?php if ( ! empty( $photo_section_title ) ) : ?>
+          <h2 class="footer-section-title font--h2-600"><?php echo esc_html( $contact_info_title ); ?></h2>
         <?php endif; ?>
+
         <?php if ($footer_section_description): ?>
-          <div class="footer__dec font--p-16 blue_secound_color"><?php echo wp_kses_post($footer_section_description); ?></div>
+          <div class="footer__decscription font--p-16 blue_secound_color"><?php echo wp_kses_post($footer_section_description); ?></div>
         <?php endif; ?>
       </div>
 

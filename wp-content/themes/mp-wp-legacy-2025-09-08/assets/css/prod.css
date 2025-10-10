@@ -272,6 +272,17 @@ a {
   width: 100%;
   padding: 0px 30px 30px 30px;
 }
+.footer .footer__decscription p {
+  text-align: center;
+}
+.footer .footer__decscription strong {
+  color: #A3197C;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration-line: underline;
+}
 .footer__heading, .footer__left {
   width: 35%;
 }
