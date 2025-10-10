@@ -23,15 +23,15 @@
                                         $logo_image = $logo['logo_images'] ?? null;
                                         $logo_size  = $logo['logo_size'] ?? 'medium';
                                         $logo_url   = $logo['logo_url'] ?? '';
-                                        if ( $logo_image && ! empty( $logo_image['link'] ) ) : ?>
+                                        if ( $logo_image && ! empty( $logo_image['url'] ) ) : ?>
                                             <div class="logo-item__image <?php echo esc_attr($logo_size); ?> hideme">
                                                 <?php if ( $logo_url ) : ?>
                                                     <a href="<?php echo esc_url( $logo_url ); ?>" target="_blank" rel="noopener">
-                                                        <img src="<?php echo esc_url( $logo_image['link'] ); ?>"
+                                                        <img src="<?php echo esc_url( $logo_image['url'] ); ?>"
                                                             alt="<?php echo esc_attr( $logo_image['alt'] ?? '' ); ?>">
                                                     </a>
                                                     <?php else : ?>
-                                                <img src="<?php echo esc_url( $logo_image['link'] ); ?>"
+                                                <img src="<?php echo esc_url( $logo_image['url'] ); ?>"
                                                 alt="<?php echo esc_attr( $logo_image['alt'] ?? '' ); ?>">
                                         <?php endif; ?>
                                             </div>

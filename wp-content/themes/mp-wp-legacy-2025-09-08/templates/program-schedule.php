@@ -13,9 +13,11 @@
                             <h3 class="program-item__heading font--h4-500 darkblue_color">
                                 <?php echo wp_kses_post(get_sub_field('heading')); ?>
                             </h3>
+                            <?php if ( get_sub_field('time') ) : ?>
                             <div class="program-item__time font--h4-500 darkblue_color">
                                 <?php the_sub_field('time'); ?>
                             </div>
+                            <?php endif; ?>
                             <div class="program-item__content font--p-16">
                                 <?php the_sub_field('content'); ?>
                             </div>

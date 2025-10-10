@@ -24,6 +24,7 @@ $sub_title = get_sub_field('guest_sub_text');
                     $guest_image = get_sub_field('guest_image');
                     $guest_name  = get_sub_field('guest_name');
                     $guest_role  = get_sub_field('guest_role__description');
+                    $guest_position = get_sub_field('guest_position');
                     $guest_link_text  = get_sub_field('guest_link_text');
                     $option      = get_sub_field('guest_option');
                     $link        = get_sub_field('guest_link');
@@ -58,7 +59,9 @@ $sub_title = get_sub_field('guest_sub_text');
                             <?php if ( $guest_name ) : ?>
                                 <h3 class="guest-card__name font--h4-500"><?php echo esc_html( $guest_name ); ?></h3>
                             <?php endif; ?>
-
+                            <?php if ( $guest_position ) : ?>
+                                <div class="guest-card__role font--p-16"><?php echo wp_kses_post( $guest_position ); ?></div>
+                            <?php endif; ?>    
                             <?php if ( $guest_role ) : ?>
                                 <div class="guest-card__role font--p-16"><?php echo wp_kses_post( $guest_role ); ?></div>
                             <?php endif; ?>
