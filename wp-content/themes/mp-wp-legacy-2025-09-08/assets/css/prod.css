@@ -587,6 +587,7 @@ html {
   align-items: center;
   justify-content: center;
   padding: 5px;
+  min-width: 48px;
 }
 .btn--icon:hover {
   opacity: 0.9;
@@ -710,6 +711,16 @@ body.popup-open {
 .guest-card__link:hover {
   text-decoration: underline;
   opacity: 0.9;
+}
+.guest-card .guest-position-sec h4 {
+  background-color: #A3197C;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 6px 20px;
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .guest-popup {
@@ -1754,7 +1765,7 @@ body.popup-open {
     padding: 20px;
     border-radius: 26px;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
   }
   .footer__dec strong {
     font-size: 18px;

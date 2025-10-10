@@ -58,25 +58,27 @@ $sub_title = get_sub_field('guest_sub_text');
                         <div class="guest-card__flex-box">
                             <?php if ( $guest_name ) : ?>
                                 <h3 class="guest-card__name font--h4-500"><?php echo esc_html( $guest_name ); ?></h3>
-                            <?php endif; ?>
-                            <?php if ( $guest_position ) : ?>
-                                <div class="guest-card__role font--p-16"><?php echo wp_kses_post( $guest_position ); ?></div>
-                            <?php endif; ?>    
+                            <?php endif; ?>  
                             <?php if ( $guest_role ) : ?>
                                 <div class="guest-card__role font--p-16"><?php echo wp_kses_post( $guest_role ); ?></div>
                             <?php endif; ?>
                         </div>
-                        <?php if( $option == 'link' && $link ): ?>
-                            <a href="<?php echo esc_url($link); ?>" target="_blank" class="guest-link guest-card__link font--p-16"><?php echo esc_html($guest_link_text); ?></a>
-                        <?php elseif( $option == 'popup' && $popup_content ): ?>
+                        <div class="guest-position-sec">
+                            <?php if ( $guest_position ) : ?>
+                                <h4><?php echo wp_kses_post( $guest_position ); ?></h4>
+                            <?php endif; ?> 
+                            <?php if( $option == 'link' && $link ): ?>
+                                <a href="<?php echo esc_url($link); ?>" target="_blank" class="guest-link guest-card__link font--p-16"><?php echo esc_html($guest_link_text); ?></a>
+                            <?php elseif( $option == 'popup' && $popup_content ): ?>
 
-                            <button class="guest-popup-btn guest-card__link font--p-16" data-popup-key="<?php echo esc_attr($guest_id); ?>"><?php echo esc_html($guest_link_text); ?></button>
+                                <button class="guest-popup-btn guest-card__link font--p-16" data-popup-key="<?php echo esc_attr($guest_id); ?>"><?php echo esc_html($guest_link_text); ?></button>
 
-                            <!-- hidden content -->
-                            <div class="guest-popup-data" id="guest_content_<?php echo esc_attr($guest_id); ?>" style="display:none;">
-                            <?php echo apply_filters('the_content', $popup_content); ?>
-                            </div>
-                        <?php endif; ?>
+                                <!-- hidden content -->
+                                <div class="guest-popup-data" id="guest_content_<?php echo esc_attr($guest_id); ?>" style="display:none;">
+                                <?php echo apply_filters('the_content', $popup_content); ?>
+                                </div>
+                            <?php endif; ?>
+                        </div>
                     </div>
                 </div>
             <?php endwhile; ?>
