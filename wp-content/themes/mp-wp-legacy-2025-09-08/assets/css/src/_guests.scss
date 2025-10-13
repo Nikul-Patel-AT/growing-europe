@@ -13,7 +13,7 @@ body.popup-open {
 
   &__grid {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     margin: 0 -16px;
     row-gap: 32px;

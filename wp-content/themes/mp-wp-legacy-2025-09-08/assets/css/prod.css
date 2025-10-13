@@ -667,7 +667,7 @@ body.popup-open {
 }
 .guests__grid {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   margin: 0 -16px;
   row-gap: 32px;
@@ -1692,8 +1692,8 @@ body.popup-open {
     line-height: 20px;
   }
   .btn--icon {
-    min-width: 35px;
-    min-height: 35px;
+    min-width: 45px;
+    min-height: 45px;
   }
   .btn--icon svg {
     width: 24px;
