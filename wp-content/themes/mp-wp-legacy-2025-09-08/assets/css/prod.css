@@ -1790,6 +1790,9 @@ body.popup-open {
   .footer h2.footer-section-title {
     padding: 0px 20px;
   }
+  .footer .footer__decscription strong {
+    font-size: 18px;
+  }
   .footer__dec strong {
     font-size: 18px;
     line-height: 24px;

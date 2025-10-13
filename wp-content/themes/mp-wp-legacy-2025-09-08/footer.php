@@ -168,7 +168,7 @@ $section_id                  = get_field('section_id', 'option');
 
       <div class="footer__section white_background">
 
-        <?php if ( ! empty( $photo_section_title ) ) : ?>
+        <?php if ( ! empty( $contact_info_title ) ) : ?>
           <h2 class="footer-section-title font--h2-600"><?php echo esc_html( $contact_info_title ); ?></h2>
         <?php endif; ?>
 
