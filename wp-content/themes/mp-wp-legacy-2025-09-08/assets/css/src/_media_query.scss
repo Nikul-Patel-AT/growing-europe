@@ -928,6 +928,15 @@
                 order: -1;
                 margin-top: 20px;
             }
+
+            .left-side-image img {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 3/2;
+                object-fit: cover;
+                object-position: top;
+            }
+
             .contact-phone-box {
                 padding-top: 16px;
             }
@@ -938,6 +947,16 @@
                 order: -1;
                 margin-top: 20px;
             }
+
+            .right-side-image img {
+                border-radius: 24px;
+                width: 100%;
+                height: auto;
+                aspect-ratio: 3/2;
+                object-fit: cover;
+                object-position: top;
+            }
+            
             .contact-phone-box {
                 padding-top: 16px;
             }

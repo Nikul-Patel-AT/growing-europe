@@ -1860,12 +1860,27 @@ body.popup-open {
     order: -1;
     margin-top: 20px;
   }
+  .footer__left .left-side-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    object-position: top;
+  }
   .footer__left .contact-phone-box {
     padding-top: 16px;
   }
   .footer__right .right-side-image {
     order: -1;
     margin-top: 20px;
+  }
+  .footer__right .right-side-image img {
+    border-radius: 24px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    object-position: top;
   }
   .footer__right .contact-phone-box {
     padding-top: 16px;
