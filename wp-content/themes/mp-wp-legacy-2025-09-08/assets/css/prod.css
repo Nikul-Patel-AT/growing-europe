@@ -735,11 +735,11 @@ body.popup-open {
 .guest-card .guest-position-sec h4 {
   background-color: #A3197C;
   color: #fff;
-  text-transform: uppercase;
-  padding: 6px 20px;
+  text-transform: capitalize;
+  padding: 6px 14px;
   border-radius: 30px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 10px;
 }
 
@@ -1902,14 +1902,6 @@ body.popup-open {
   .popup-content ol, .popup-content ul {
     list-style: unset;
     margin-left: 10px !important;
-  }
-  .footer__left .left-side-image img {
-    width: 100%;
-    height: auto;
-  }
-  .footer__right .right-side-image img {
-    width: 100%;
-    height: auto;
   }
 }
 
