@@ -4,6 +4,7 @@ $padding_class = get_sub_field('section_padding') ?: 'padding-top-108 padding-bo
 $display_condition = get_sub_field('section_visibility') ?: 'show'; // default to 'show'
 ?>
 
+<?php if($display_condition == 'show') { ?>
 <section class="links-section <?php echo esc_attr($padding_class . ' ' . $display_condition); ?> hideme">
     <div class="container">
         <?php if ( $heading ) : ?>
@@ -34,3 +35,4 @@ $display_condition = get_sub_field('section_visibility') ?: 'show'; // default t
         <?php endif; ?>
     </div>
 </section>
+<?php } ?>
