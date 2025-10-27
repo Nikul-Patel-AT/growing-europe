@@ -920,6 +920,12 @@ body.popup-open {
   font-weight: bold !important;
 }
 
+.links-section.show {
+  display: block;
+}
+.links-section.hide {
+  display: none;
+}
 .links-section__title {
   color: #423D6C;
 }
