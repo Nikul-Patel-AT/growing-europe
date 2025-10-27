@@ -1,5 +1,13 @@
 .links-section {
 
+  &.show {
+    display: block;
+  }
+
+  &.hide {
+    display: none;
+  }
+
   &__title {
     color: $blue_secound_color;
   }
@@ -19,7 +27,6 @@
         color: $text-color;
 
         span {
-           
           background: $text-color;
 
           svg path {

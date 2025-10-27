@@ -1,8 +1,10 @@
 <?php
 $heading = get_sub_field( 'section_heading' );
+$padding_class = get_sub_field('section_padding') ?: 'padding-top-108 padding-bottom-108';
+$display_condition = get_sub_field('section_visibility') ?: 'show'; // default to 'show'
 ?>
 
-<section class="links-section padding-top-108 padding-bottom-108 hideme">
+<section class="links-section <?php echo esc_attr($padding_class . ' ' . $display_condition); ?> hideme">
     <div class="container">
         <?php if ( $heading ) : ?>
             <h2 class="links-section__title font--h2-600 padding-bottom-56"><?php echo esc_html( $heading ); ?></h2>
