@@ -201,6 +201,16 @@ $organizing_institutions_image  = get_field('organizing_institutions_image', 'op
 $organizing_institutions_content = get_field('organizing_institutions_content', 'option');
 $save_every_newborn_image  = get_field('save_every_newborn_image', 'option');
 $save_every_newborn_content = get_field('save_every_newborn_content', 'option');
+$photo_gallery_image = get_field('photo_gallery_image', 'option');
+$photo_gallery_content = get_field('photo_gallery_content', 'option');
+$video_highlights_image = get_field('video_highlights_image', 'option');
+$video_highlights_content = get_field('video_highlights_content', 'option');
+$live_stream_image = get_field('recording_of_the_live_stream_image', 'option');
+$live_stream_content = get_field('recording_of_the_live_stream_content', 'option');
+$press_releases_image = get_field('press_releases_image', 'option');
+$press_releases_content = get_field('press_releases_content', 'option');
+$follow_up_actions_image = get_field('follow-up_actions_image', 'option');
+$follow_up_actions_content = get_field('follow-up_actions_content', 'option');
 ?>
 
 <div id="about-summit-popup" class="popup" style="display:none;">
@@ -292,6 +302,111 @@ $save_every_newborn_content = get_field('save_every_newborn_content', 'option');
 
       <?php if ($save_every_newborn_content): ?>
         <div class="popup-content"><?php echo apply_filters('the_content', $save_every_newborn_content); ?></div>
+      <?php endif; ?>
+
+      <button class="popup-close btn btn--primary btn--icon close_icon_color">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M8.25729 7.75736L16.7426 16.2426M16.7426 7.75736L8.25729 16.2426" stroke="#492447" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Photo Gallery Pop Up Section -->
+<div id="photo-gallery" class="popup" style="display:none;">
+  <div class="popup__main-container">
+    <div class="popup-inner">
+      <?php if ($photo_gallery_image): ?>
+        <img src="<?php echo esc_url($photo_gallery_image['url']); ?>" alt="<?php echo esc_attr($photo_gallery_image['alt']); ?>" class="popup-image">
+      <?php endif; ?>
+
+      <?php if ($photo_gallery_content): ?>
+        <div class="popup-content"><?php echo apply_filters('the_content', $photo_gallery_content); ?></div>
+      <?php endif; ?>
+
+      <button class="popup-close btn btn--primary btn--icon close_icon_color">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M8.25729 7.75736L16.7426 16.2426M16.7426 7.75736L8.25729 16.2426" stroke="#492447" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Video Highlights Pop Up Section -->
+<div id="video-highlights" class="popup" style="display:none;">
+  <div class="popup__main-container">
+    <div class="popup-inner">
+      <?php if ($video_highlights_image): ?>
+        <img src="<?php echo esc_url($video_highlights_image['url']); ?>" alt="<?php echo esc_attr($video_highlights_image['alt']); ?>" class="popup-image">
+      <?php endif; ?>
+
+      <?php if ($video_highlights_content): ?>
+        <div class="popup-content"><?php echo apply_filters('the_content', $video_highlights_content); ?></div>
+      <?php endif; ?>
+
+      <button class="popup-close btn btn--primary btn--icon close_icon_color">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M8.25729 7.75736L16.7426 16.2426M16.7426 7.75736L8.25729 16.2426" stroke="#492447" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Recording of the Live Stream Pop Up Section -->
+<div id="recording-of-live-stream" class="popup" style="display:none;">
+  <div class="popup__main-container">
+    <div class="popup-inner">
+      <?php if ($live_stream_image): ?>
+        <img src="<?php echo esc_url($live_stream_image['url']); ?>" alt="<?php echo esc_attr($live_stream_image['alt']); ?>" class="popup-image">
+      <?php endif; ?>
+
+      <?php if ($live_stream_content): ?>
+        <div class="popup-content"><?php echo apply_filters('the_content', $live_stream_content); ?></div>
+      <?php endif; ?>
+
+      <button class="popup-close btn btn--primary btn--icon close_icon_color">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M8.25729 7.75736L16.7426 16.2426M16.7426 7.75736L8.25729 16.2426" stroke="#492447" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Press Releases Pop Up Section -->
+<div id="press-releases" class="popup" style="display:none;">
+  <div class="popup__main-container">
+    <div class="popup-inner">
+      <?php if ($press_releases_image): ?>
+        <img src="<?php echo esc_url($press_releases_image['url']); ?>" alt="<?php echo esc_attr($press_releases_image['alt']); ?>" class="popup-image">
+      <?php endif; ?>
+
+      <?php if ($press_releases_content): ?>
+        <div class="popup-content"><?php echo apply_filters('the_content', $press_releases_content); ?></div>
+      <?php endif; ?>
+
+      <button class="popup-close btn btn--primary btn--icon close_icon_color">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M8.25729 7.75736L16.7426 16.2426M16.7426 7.75736L8.25729 16.2426" stroke="#492447" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Follow-up Actions Pop Up Section -->
+<div id="follow-up-actions" class="popup" style="display:none;">
+  <div class="popup__main-container">
+    <div class="popup-inner">
+      <?php if ($follow_up_actions_image): ?>
+        <img src="<?php echo esc_url($follow_up_actions_image['url']); ?>" alt="<?php echo esc_attr($follow_up_actions_image['alt']); ?>" class="popup-image">
+      <?php endif; ?>
+
+      <?php if ($follow_up_actions_content): ?>
+        <div class="popup-content"><?php echo apply_filters('the_content', $follow_up_actions_content); ?></div>
       <?php endif; ?>
 
       <button class="popup-close btn btn--primary btn--icon close_icon_color">
