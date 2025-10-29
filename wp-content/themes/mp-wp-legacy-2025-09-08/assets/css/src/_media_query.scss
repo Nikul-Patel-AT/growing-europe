@@ -223,12 +223,6 @@
         &__image {
 
             line-height: 0;
-
-            img {
-                height: 100%;
-                object-fit: cover;
-                border-radius: 36px;
-            }
         }
     }
 
@@ -531,13 +525,13 @@
     }
 
     .guests__grid {
-        align-items: flex-start;
 
         .guest-card {
             flex-direction: column;
 
             .guest-50-flex {
                 width: 100%;
+                height: 100%;
             }
         }
 
