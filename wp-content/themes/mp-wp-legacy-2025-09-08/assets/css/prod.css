@@ -817,10 +817,17 @@ body.popup-open {
   letter-spacing: -0.24px;
   margin-bottom: 20px;
 }
+.guest-popup-content a {
+  color: #A3197C;
+}
 .guest-popup-content ol,
 .guest-popup-content ul {
   list-style: unset;
   margin-left: 20px;
+}
+.guest-popup-content ol li,
+.guest-popup-content ul li {
+  padding-bottom: 10px;
 }
 .guest-popup-content p,
 .guest-popup-content li,

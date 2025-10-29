@@ -48,9 +48,7 @@ $display_condition = get_sub_field('section_visibility') ?: 'show'; // default t
                                     </a>
 
                                     <!-- Hidden popup content -->
-
                                     <div class="link-popup-data" id="link_content_<?php echo esc_attr($links_id); ?>" style="display:none;">
-
                                         <?php if ($popup_banner_image): ?>
                                             <img src="<?php echo esc_url($popup_banner_image['url']); ?>" alt="<?php echo esc_attr($popup_banner_image['alt']); ?>" class="popup-image">
                                         <?php endif; ?>
@@ -66,7 +64,7 @@ $display_condition = get_sub_field('section_visibility') ?: 'show'; // default t
                 </div>
             <?php endif; ?>
 
-            <div id="link-block-popup" class="guest-popup link-popup popup" aria-hidden="true">
+            <div id="link-block-popup" class="guest-popup link-popup" aria-hidden="true">
                 <div class="guest-popup-content" role="dialog" aria-modal="true">
                     <span class="guest-popup-close btn btn--primary btn--icon close_icon_color">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -76,7 +74,6 @@ $display_condition = get_sub_field('section_visibility') ?: 'show'; // default t
                     <div id="link-modal-body" class="link-block-content"></div>
                 </div>
             </div>
-
         </div>
     </section>
 <?php } ?>

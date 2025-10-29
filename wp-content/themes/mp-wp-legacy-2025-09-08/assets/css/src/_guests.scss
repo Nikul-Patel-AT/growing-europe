@@ -182,10 +182,19 @@ body.popup-open {
       margin-bottom: 20px;
     }
 
+    a {
+      color: #A3197C;
+    }
+
     ol,
     ul {
       list-style: unset;
       margin-left: 20px;
+    }
+
+    ol li,
+    ul li {
+      padding-bottom: 10px;
     }
 
     p,
