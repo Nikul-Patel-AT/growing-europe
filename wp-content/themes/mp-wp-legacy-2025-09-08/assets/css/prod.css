@@ -926,6 +926,15 @@ body.popup-open {
 .links-section.hide {
   display: none;
 }
+.links-section .link-popup .guest-popup-content {
+  padding: 0px;
+}
+.links-section .link-popup .guest-popup-content .link-block-content > img {
+  max-width: 100%;
+}
+.links-section .link-popup .guest-popup-content .link-block-content .popup-content {
+  padding: 40px;
+}
 .links-section__title {
   color: #423D6C;
 }
@@ -1512,6 +1521,9 @@ body.popup-open {
     letter-spacing: 0;
     margin-bottom: 10px;
   }
+  .links-section .link-popup .popup-content {
+    padding: 30px !important;
+  }
 }
 @media only screen and (max-width: 991px) {
   .header {
@@ -1818,7 +1830,8 @@ body.popup-open {
   .popup .popup-content {
     padding: 20px;
   }
-  .popup .popup-content > h2, .popup .popup-content > h3 {
+  .popup .popup-content > h2,
+  .popup .popup-content > h3 {
     padding-right: 40px;
   }
   .popup .popup-content h2 {
@@ -1861,6 +1874,9 @@ body.popup-open {
   }
   .guests {
     margin: 0;
+  }
+  .links-section .link-popup .popup-content {
+    padding: 20px !important;
   }
   .footer__left .left-side-image {
     order: -1;
@@ -1923,7 +1939,8 @@ body.popup-open {
     /* or 100% if you want full-width */
     text-align: center;
   }
-  .popup-content ol, .popup-content ul {
+  .popup-content ol,
+  .popup-content ul {
     list-style: unset;
     margin-left: 10px !important;
   }
