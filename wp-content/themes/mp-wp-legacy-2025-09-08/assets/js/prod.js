@@ -76,6 +76,35 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 });
 
+
+// Links Section Popups Section Jquery
+document.addEventListener('DOMContentLoaded', function(){
+  var modal = document.getElementById('link-block-popup');
+  var modalBody = document.getElementById('link-modal-body');
+
+  document.querySelectorAll('.link-popup-btn').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      var key = btn.dataset.popupKey;
+      var hidden = document.getElementById('link_content_' + key);
+      if (!hidden) { console.warn('no popup data for', key); return; }
+      modalBody.innerHTML = hidden.innerHTML;
+      modal.classList.add('active');
+      // modal.style.display = 'block';
+      modal.setAttribute('aria-hidden','false');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+  
+  modal.addEventListener('click', function(e){
+    if (e.target === modal || e.target.closest('.guest-popup-close')) {
+      modal.classList.remove('active');
+      modal.setAttribute('aria-hidden','true');
+      document.body.style.overflow = '';
+      modalBody.innerHTML = '';
+    }
+  });
+});
+
 jQuery(document).ready(function($) {
     var perPage = parseInt($('#show-more').data('perpage'));
     var $guests = $('.guest-card');
