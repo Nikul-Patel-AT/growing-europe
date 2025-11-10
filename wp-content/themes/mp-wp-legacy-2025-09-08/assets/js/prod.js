@@ -107,6 +107,15 @@ jQuery(document).ready(function ($) {
   $(window).on("scroll", revealOnScroll);
 });
 
+// Cookie Consent Inject
+document.addEventListener("DOMContentLoaded", function () {
+  var blockedVideos = document.getElementsByClassName("video-placeholder-text-youtube");
+  for (let i = 0; i < blockedVideos.length; i++) {
+    blockedVideos[i].classList.add("cky-banner-element");
+  }
+
+});
+
 // Guest Section Popups Section Jquery
 document.addEventListener("DOMContentLoaded", function () {
   var modal = document.getElementById("guest-modal");
