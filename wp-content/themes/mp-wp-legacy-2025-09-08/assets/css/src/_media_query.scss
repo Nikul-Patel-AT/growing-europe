@@ -164,6 +164,19 @@
         &__section {
             padding: 40px 50px;
             border-radius: 36px;
+
+            &.p-0 {
+                gap: 15px;
+
+                .col {
+                    width: calc(50% - 15px);
+
+                    h3.font--h3-600 {
+                        font-size: 32px;
+                        line-height: 32px;
+                    }
+                }
+            }   
         }
 
         &__dec strong {
@@ -196,6 +209,7 @@
                 width: 100%;
             }
         }
+
     }
 
     .guests {
@@ -373,6 +387,13 @@
         &__section {
             padding: 30px 30px 30px 30px;
             border-radius: 26px;
+
+            &.p-0 {
+                
+                .col {
+                    padding: 30px;
+                }
+            }        
         }
 
         &__dec strong {
@@ -823,6 +844,19 @@
             border-radius: 26px;
             flex-direction: column;
             gap: 20px;
+
+            &.p-0 {
+                
+                .col {
+                    padding: 20px;
+                    width: 100%;
+
+                    h3.font--h3-600 {
+                        font-size: 24px;
+                        line-height: 26px;
+                    } 
+                }
+            }        
         }
 
         h2.footer-section-title {
@@ -847,6 +881,7 @@
         &__right {
             width: 100%;
         }
+
     }
 
     .popup {

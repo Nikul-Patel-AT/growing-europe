@@ -1,12 +1,16 @@
 <?php
 $footer_section_title       = get_field('footer_section_title', 'option');
 $footer_section_description = get_field('footer_section_description', 'option');
-$photo_section_title = get_field('photos_section_title','option');
-$contact_info_title = get_field('contact_info_title','option');
+$photo_section_title = get_field('photos_section_title', 'option');
+$contact_info_title = get_field('contact_info_title', 'option');
 $footer_left                = get_field('footer_left_section', 'option');
 $footer_right               = get_field('footer_right_section', 'option');
 $copyright                  = get_field('footer_copyright', 'option');
 $section_id                  = get_field('section_id', 'option');
+$dnt_title                  = get_field('dnt_title', 'option');
+$dnt_description            = get_field('dnt_description', 'option');
+$btn_label                  = get_field('dnt_button_label', 'option');
+$dnt_btn_url                    = get_field('dnt_button', 'option');
 ?>
 
 <footer id="<?php echo $section_id; ?>">
@@ -17,10 +21,10 @@ $section_id                  = get_field('section_id', 'option');
       <div class="footer__section white_background">
 
         <!-- heading Section -->
-        <?php if ( ! empty( $photo_section_title ) ) : ?>
-          <h2 class="footer-section-title font--h2-600"><?php echo esc_html( $photo_section_title ); ?></h2>
+        <?php if (! empty($photo_section_title)) : ?>
+          <h2 class="footer-section-title font--h2-600"><?php echo esc_html($photo_section_title); ?></h2>
         <?php endif; ?>
-        
+
         <!-- Left Section -->
         <?php if ($footer_left): ?>
           <div class="footer__left footer__right">
@@ -40,11 +44,11 @@ $section_id                  = get_field('section_id', 'option');
               </div>
             <?php endif; ?>
 
-            
+
             <div class="footer-left-image-sec">
               <?php if (!empty($footer_left['global_contact_name'])): ?>
                 <h3 class="font--h4-500 blue_secound_color"><?php echo esc_html($footer_left['global_contact_name']); ?></h3>
-              <?php endif; ?>  
+              <?php endif; ?>
               <?php if ($footer_left['global_left_image']): ?>
                 <div class="left-side-image">
                   <img src="<?php echo esc_url($footer_left['global_left_image']['url']); ?>" alt="<?php echo esc_url($footer_left['global_left_image']['alt']); ?>" width="200" height="200">
@@ -110,8 +114,8 @@ $section_id                  = get_field('section_id', 'option');
               <p class="font--p-16 blue_secound_color"><?php echo esc_html($footer_right['heading']); ?></p>
             <?php endif; ?>
 
-            
-            <div class="footer-right-image-sec"> 
+
+            <div class="footer-right-image-sec">
               <?php if (!empty($footer_right['contact_name'])): ?>
                 <h3 class="font--h4-500 blue_secound_color"><?php echo esc_html($footer_right['contact_name']); ?></h3>
               <?php endif; ?>
@@ -120,7 +124,7 @@ $section_id                  = get_field('section_id', 'option');
                   <img src="<?php echo esc_url($footer_right['footer_right_image']['url']); ?>" alt="<?php echo esc_url($footer_right['footer_right_image']['alt']); ?>" width="200" height="200">
                 </div>
               <?php endif; ?>
-              <div class="left-content-sec"> 
+              <div class="left-content-sec">
                 <?php if (!empty($footer_right['contact_email'])): ?>
                   <div class="contact-email-box">
                     <span class="btn btn--primary btn--icon">
@@ -161,20 +165,46 @@ $section_id                  = get_field('section_id', 'option');
                   </div>
                 <?php endif; ?>
               </div>
-            </div>        
+            </div>
           </div>
         <?php endif; ?>
       </div>
 
-      <div class="footer__section white_background">
+      <div class="footer__section p-0">
 
-        <?php if ( ! empty( $contact_info_title ) ) : ?>
-          <h2 class="footer-section-title font--h2-600"><?php echo esc_html( $contact_info_title ); ?></h2>
-        <?php endif; ?>
+        <div class="col left-col white_background">
 
-        <?php if ($footer_section_description): ?>
-          <div class="footer__decscription font--p-16 blue_secound_color"><?php echo wp_kses_post($footer_section_description); ?></div>
-        <?php endif; ?>
+          <?php if (! empty($contact_info_title)) : ?>
+            <h3 class="font--h3-600"><?php echo esc_html($contact_info_title); ?></h3>
+          <?php endif; ?>
+
+          <?php if ($footer_section_description): ?>
+            <div class="footer__decscription font--p-16 blue_secound_color"><?php echo wp_kses_post($footer_section_description); ?></div>
+          <?php endif; ?>
+
+
+        </div>
+
+        <div class="col right-col white_background">
+
+          <?php if (! empty($dnt_title)) : ?>
+            <h3 class="font--h3-600"><?php echo esc_html($dnt_title); ?></h3>
+          <?php endif; ?>
+
+          <?php if ($dnt_description): ?>
+            <div class="footer__decscription font--p-16 blue_secound_color"><?php echo wp_kses_post($dnt_description); ?></div>
+          <?php endif; ?>
+
+          <?php if ($btn_label && $dnt_btn_url): ?>
+            <div class="header__cta">
+              <a href="<?php echo esc_url($dnt_btn_url); ?>" class="btn_design_1" target="_blank">
+                <span class="btn btn--primary"><?php echo esc_html($btn_label); ?></span>
+              </a>
+            </div>
+          <?php endif; ?>
+
+        </div>
+
       </div>
 
       <!-- Copyright -->
@@ -195,22 +225,14 @@ $summit_image   = get_field('summit_image', 'option');
 $summit_content = get_field('summit_content', 'option');
 $banner_image  = get_field('travel_accommodation_banner_image', 'option');
 $travel_accommodation_content = get_field('travel_accommodation_content', 'option');
-$research_banner_image  = get_field('research_banner_image', 'option');
-$research_content = get_field('research_content', 'option');
-$organizing_institutions_image  = get_field('organizing_institutions_image', 'option');
-$organizing_institutions_content = get_field('organizing_institutions_content', 'option');
 $save_every_newborn_image  = get_field('save_every_newborn_image', 'option');
 $save_every_newborn_content = get_field('save_every_newborn_content', 'option');
-$photo_gallery_image = get_field('photo_gallery_image', 'option');
-$photo_gallery_content = get_field('photo_gallery_content', 'option');
-$video_highlights_image = get_field('video_highlights_image', 'option');
-$video_highlights_content = get_field('video_highlights_content', 'option');
-$live_stream_image = get_field('recording_of_the_live_stream_image', 'option');
-$live_stream_content = get_field('recording_of_the_live_stream_content', 'option');
-$press_releases_image = get_field('press_releases_image', 'option');
-$press_releases_content = get_field('press_releases_content', 'option');
-$follow_up_actions_image = get_field('follow-up_actions_image', 'option');
-$follow_up_actions_content = get_field('follow-up_actions_content', 'option');
+$donation_image = get_field('donation_image', 'option');
+$donation_content = get_field('donation_content', 'option');
+$paysera_button_label = get_field('paysera_button_label', 'option');
+$paysera_button_url = get_field('paysera_button_url', 'option');
+$paypal_button_label = get_field('paypal_button_label', 'option');
+$paypal_button_url = get_field('paypal_button_url', 'option');
 ?>
 
 <div id="about-summit-popup" class="popup" style="display:none;">
@@ -250,48 +272,6 @@ $follow_up_actions_content = get_field('follow-up_actions_content', 'option');
   </div>
 </div>
 
-<!-- Research Pop Up Section -->
-<div id="research" class="popup" style="display:none;">
-  <div class="popup__main-container">
-    <div class="popup-inner">
-      <?php if ($research_banner_image): ?>
-        <img src="<?php echo esc_url($research_banner_image['url']); ?>" alt="<?php echo esc_attr($research_banner_image['alt']); ?>" class="popup-image">
-      <?php endif; ?>
-
-      <?php if ($research_content): ?>
-        <div class="popup-content"><?php echo apply_filters('the_content', $research_content); ?></div>
-      <?php endif; ?>
-
-      <button class="popup-close btn btn--primary btn--icon close_icon_color">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path d="M8.25729 7.75736L16.7426 16.2426M16.7426 7.75736L8.25729 16.2426" stroke="#492447" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" />
-        </svg>
-      </button>
-    </div>
-  </div>
-</div>
-
-<!-- Organizing Institutions Pop Up Section -->
-<div id="organizing-institutions" class="popup" style="display:none;">
-  <div class="popup__main-container">
-    <div class="popup-inner">
-      <?php if ($organizing_institutions_image): ?>
-        <img src="<?php echo esc_url($organizing_institutions_image['url']); ?>" alt="<?php echo esc_attr($organizing_institutions_image['alt']); ?>" class="popup-image">
-      <?php endif; ?>
-
-      <?php if ($organizing_institutions_content): ?>
-        <div class="popup-content"><?php echo apply_filters('the_content', $organizing_institutions_content); ?></div>
-      <?php endif; ?>
-
-      <button class="popup-close btn btn--primary btn--icon close_icon_color">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path d="M8.25729 7.75736L16.7426 16.2426M16.7426 7.75736L8.25729 16.2426" stroke="#492447" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" />
-        </svg>
-      </button>
-    </div>
-  </div>
-</div>
-
 <!-- Save Every Newborn Pop Up Section -->
 <div id="save-every-newborn" class="popup" style="display:none;">
   <div class="popup__main-container">
@@ -313,101 +293,36 @@ $follow_up_actions_content = get_field('follow-up_actions_content', 'option');
   </div>
 </div>
 
-<!-- Photo Gallery Pop Up Section -->
-<div id="photo-gallery" class="popup" style="display:none;">
+<!-- How to donate: By Paysera or PayPal Pop Up Section -->
+<div id="donation-popup" class="popup" style="display:none;">
   <div class="popup__main-container">
     <div class="popup-inner">
-      <?php if ($photo_gallery_image): ?>
-        <img src="<?php echo esc_url($photo_gallery_image['url']); ?>" alt="<?php echo esc_attr($photo_gallery_image['alt']); ?>" class="popup-image">
+
+      <?php if ($donation_content): ?>
+        <div class="popup-content"><?php echo apply_filters('the_content', $donation_content); ?>
+        
+        <div class="btn-grp">
+          <?php if ($paysera_button_label && $paysera_button_url): ?>
+            <div class="header__cta">
+              <a href="<?php echo esc_url($paysera_button_url); ?>" class="btn_design_1" target="_blank">
+                <span class="btn btn--primary"><?php echo esc_html($paysera_button_label); ?></span>
+              </a>
+            </div>
+          <?php endif; ?>
+
+          <?php if ($paypal_button_label && $paypal_button_url): ?>
+            <div class="header__cta">
+              <a href="<?php echo esc_url($paypal_button_url); ?>" class="btn_design_1" target="_blank">
+                <span class="btn btn--primary"><?php echo esc_html($paypal_button_label); ?></span>
+              </a>
+            </div>
+          <?php endif; ?>
+        </div>
+      </div>
+
       <?php endif; ?>
 
-      <?php if ($photo_gallery_content): ?>
-        <div class="popup-content"><?php echo apply_filters('the_content', $photo_gallery_content); ?></div>
-      <?php endif; ?>
 
-      <button class="popup-close btn btn--primary btn--icon close_icon_color">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path d="M8.25729 7.75736L16.7426 16.2426M16.7426 7.75736L8.25729 16.2426" stroke="#492447" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" />
-        </svg>
-      </button>
-    </div>
-  </div>
-</div>
-
-<!-- Video Highlights Pop Up Section -->
-<div id="video-highlights" class="popup" style="display:none;">
-  <div class="popup__main-container">
-    <div class="popup-inner">
-      <?php if ($video_highlights_image): ?>
-        <img src="<?php echo esc_url($video_highlights_image['url']); ?>" alt="<?php echo esc_attr($video_highlights_image['alt']); ?>" class="popup-image">
-      <?php endif; ?>
-
-      <?php if ($video_highlights_content): ?>
-        <div class="popup-content"><?php echo apply_filters('the_content', $video_highlights_content); ?></div>
-      <?php endif; ?>
-
-      <button class="popup-close btn btn--primary btn--icon close_icon_color">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path d="M8.25729 7.75736L16.7426 16.2426M16.7426 7.75736L8.25729 16.2426" stroke="#492447" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" />
-        </svg>
-      </button>
-    </div>
-  </div>
-</div>
-
-<!-- Recording of the Live Stream Pop Up Section -->
-<div id="recording-of-live-stream" class="popup" style="display:none;">
-  <div class="popup__main-container">
-    <div class="popup-inner">
-      <?php if ($live_stream_image): ?>
-        <img src="<?php echo esc_url($live_stream_image['url']); ?>" alt="<?php echo esc_attr($live_stream_image['alt']); ?>" class="popup-image">
-      <?php endif; ?>
-
-      <?php if ($live_stream_content): ?>
-        <div class="popup-content"><?php echo apply_filters('the_content', $live_stream_content); ?></div>
-      <?php endif; ?>
-
-      <button class="popup-close btn btn--primary btn--icon close_icon_color">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path d="M8.25729 7.75736L16.7426 16.2426M16.7426 7.75736L8.25729 16.2426" stroke="#492447" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" />
-        </svg>
-      </button>
-    </div>
-  </div>
-</div>
-
-<!-- Press Releases Pop Up Section -->
-<div id="press-releases" class="popup" style="display:none;">
-  <div class="popup__main-container">
-    <div class="popup-inner">
-      <?php if ($press_releases_image): ?>
-        <img src="<?php echo esc_url($press_releases_image['url']); ?>" alt="<?php echo esc_attr($press_releases_image['alt']); ?>" class="popup-image">
-      <?php endif; ?>
-
-      <?php if ($press_releases_content): ?>
-        <div class="popup-content"><?php echo apply_filters('the_content', $press_releases_content); ?></div>
-      <?php endif; ?>
-
-      <button class="popup-close btn btn--primary btn--icon close_icon_color">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path d="M8.25729 7.75736L16.7426 16.2426M16.7426 7.75736L8.25729 16.2426" stroke="#492447" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel" />
-        </svg>
-      </button>
-    </div>
-  </div>
-</div>
-
-<!-- Follow-up Actions Pop Up Section -->
-<div id="follow-up-actions" class="popup" style="display:none;">
-  <div class="popup__main-container">
-    <div class="popup-inner">
-      <?php if ($follow_up_actions_image): ?>
-        <img src="<?php echo esc_url($follow_up_actions_image['url']); ?>" alt="<?php echo esc_attr($follow_up_actions_image['alt']); ?>" class="popup-image">
-      <?php endif; ?>
-
-      <?php if ($follow_up_actions_content): ?>
-        <div class="popup-content"><?php echo apply_filters('the_content', $follow_up_actions_content); ?></div>
-      <?php endif; ?>
 
       <button class="popup-close btn btn--primary btn--icon close_icon_color">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
