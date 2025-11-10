@@ -109,6 +109,21 @@ body.popup-open {
         a , span{
             color: #A3197C !important;
         }
+
+        .btn-grp {
+            display: flex;
+            gap: 20px;
+            padding-top: 20px;
+            justify-content: center;
+        }
+
+        .header__cta span.btn.btn--primary {
+            color: #fff !important;
+        }
+
+        .header__cta a:hover span.btn.btn--primary {
+            color: #A3197C !important;
+        }
     }
 }
 

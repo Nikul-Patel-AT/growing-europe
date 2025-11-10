@@ -265,8 +265,37 @@ a {
   border-radius: 36px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
   flex-wrap: wrap;
+}
+.footer__section.p-0 {
+  padding: 0;
+  gap: 20px;
+}
+.footer__section.p-0 .col {
+  padding: 40px;
+  width: calc(50% - 20px);
+  border-radius: 36px;
+  height: auto;
+}
+.footer__section.p-0 .col h3.font--h3-600 {
+  padding-bottom: 20px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #312C5E;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  line-height: 44px;
+}
+.footer__section.p-0 .col .header__cta {
+  margin-top: 20px;
+}
+.footer__section.p-0 .col .header__cta a {
+  justify-content: center;
+}
+.footer__section.p-0 .col .header__cta a span {
+  width: 120px;
+  text-align: center;
+  display: block;
 }
 .footer h2.footer-section-title {
   width: 100%;
@@ -1196,6 +1225,18 @@ body.popup-open {
 .popup .popup-content a, .popup .popup-content span {
   color: #A3197C !important;
 }
+.popup .popup-content .btn-grp {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+  justify-content: center;
+}
+.popup .popup-content .header__cta span.btn.btn--primary {
+  color: #fff !important;
+}
+.popup .popup-content .header__cta a:hover span.btn.btn--primary {
+  color: #A3197C !important;
+}
 
 .popup:after {
   position: absolute;
@@ -1332,6 +1373,16 @@ body.popup-open {
   .footer__section {
     padding: 40px 50px;
     border-radius: 36px;
+  }
+  .footer__section.p-0 {
+    gap: 15px;
+  }
+  .footer__section.p-0 .col {
+    width: calc(50% - 15px);
+  }
+  .footer__section.p-0 .col h3.font--h3-600 {
+    font-size: 32px;
+    line-height: 32px;
   }
   .footer__dec strong {
     font-size: 20px;
@@ -1479,6 +1530,9 @@ body.popup-open {
   .footer__section {
     padding: 30px 30px 30px 30px;
     border-radius: 26px;
+  }
+  .footer__section.p-0 .col {
+    padding: 30px;
   }
   .footer__dec strong {
     font-size: 18px;
@@ -1806,6 +1860,14 @@ body.popup-open {
     border-radius: 26px;
     flex-direction: column;
     gap: 20px;
+  }
+  .footer__section.p-0 .col {
+    padding: 20px;
+    width: 100%;
+  }
+  .footer__section.p-0 .col h3.font--h3-600 {
+    font-size: 24px;
+    line-height: 26px;
   }
   .footer h2.footer-section-title {
     padding: 0px 20px;
